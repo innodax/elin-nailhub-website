@@ -5,36 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Luna Nails - profesionální nehtové studio v Brně. Nabízíme precizní manikúru, moderní i klasické nehtové styly a relaxační služby v útulném prostředí."
+      content="Elin Nailhub - profesionální nehtové studio v Brně. Nabízíme precizní manikúru, moderní i klasické nehtové styly a relaxační služby v útulném prostředí."
     />
-    <title>Luna Nails - nehtové studio v Brně</title>
+    <title>Elin Nails - nehtové studio v Brně</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap"
-      rel="stylesheet"
+    <!-- Open Graph pro Facebook a další -->
+    <meta property="og:title" content="Elin Nailhub - nehtové studio v Brně" />
+    <meta
+      property="og:description"
+      content="Profesionální manikúra a nehtové služby v Brně."
     />
+    <meta
+      property="og:image"
+      content="https://www.elinnailhub.cz/img/social-preview.jpg"
+    />
+    <meta property="og:url" content="https://www.elinnailhub.cz" />
+    <meta property="og:type" content="website" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap"
-      rel="stylesheet"
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Elin Nailhub - nehtové studio v Brně" />
+    <meta
+      name="twitter:description"
+      content="Profesionální manikúra a nehtové služby v Brně."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.elinnailhub.cz/img/social-preview.jpg"
     />
 
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&family=Hubballi&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <link rel="canonical" href="https://www.elinnailhub.cz" />
   </head>
 
   <body>
     <!-- header -->
-    <div id="header-container"></div>
+    <header id="header-container"></header>
 
     <!-- page -->
-    <div class="page white-background">
-      <div class="services-container">
+    <div class="page">
+      <section class="services-wrapper">
         <div class="service-container-name">
-          <img src="img/prirozene-nehty.png" />
+          <img
+            src="img/prirozene-nehty.png"
+            alt="Přirozené nehty - ikona"
+            loading="lazy"
+          />
           <h2>Přirozený vzhled</h2>
         </div>
         <div class="service sticky-note left">
@@ -55,7 +97,7 @@
                   d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-              <span class="service--description--time-duration">60 min</span>
+              <span class="service--description--time-duration">1 h</span>
             </p>
             <p>Úprava délky a tvaru nehtů, úprava kůžičky a hydratace.</p>
             <p class="service-price">550 Kč</p>
@@ -80,7 +122,7 @@
                   d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-              <span class="service--description--time-duration">2 hod</span>
+              <span class="service--description--time-duration">2 h</span>
             </p>
             <p>
               Speciální pasta s vitamíny a minerály zalešťovaná do nehtů pro
@@ -89,9 +131,15 @@
             <p class="service-price">700 Kč</p>
           </div>
         </div>
+      </section>
 
+      <section class="services-wrapper">
         <div class="service-container-name">
-          <img src="img/lakovani.png" />
+          <img
+            src="img/lakovani.png"
+            alt="Lakování gel-lakem - ikona"
+            loading="lazy"
+          />
           <h2>Lakování gel-lakem</h2>
         </div>
         <div class="service sticky-note right">
@@ -113,7 +161,7 @@
                 />
               </svg>
               <span class="service--description--time-duration"
-                >2 hod 30 min</span
+                >2 h 30 min</span
               >
             </p>
             <p>
@@ -142,7 +190,7 @@
                   d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-              <span class="service--description--time-duration">3 hod</span>
+              <span class="service--description--time-duration">3 h</span>
             </p>
             <p>
               Navíc zpevnění gelem/polygelem, oprava nehtů a složitější
@@ -151,9 +199,15 @@
             <p class="service-price">850 Kč</p>
           </div>
         </div>
+      </section>
 
+      <section class="services-wrapper">
         <div class="service-container-name">
-          <img src="img/prodluzovani.png" />
+          <img
+            src="img/prodluzovani.png"
+            alt="Prodloužení nehtů - ikona"
+            loading="lazy"
+          />
           <h2>Prodloužení nehtů</h2>
         </div>
 
@@ -175,7 +229,7 @@
                   d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-              <span class="service--description--time-duration">3 hod</span>
+              <span class="service--description--time-duration">3 h</span>
             </p>
             <p>Prodloužení nehtů malé až střední délky.</p>
             <p class="service-price">850 Kč</p>
@@ -201,7 +255,7 @@
                 />
               </svg>
               <span class="service--description--time-duration"
-                >3 hod 30 min</span
+                >3 h 30 min</span
               >
             </p>
             <p>Prodloužení nehtů libovolné délky a zdobení.</p>
@@ -209,7 +263,7 @@
           </div>
         </div>
 
-        <div class="service sticky-note right">
+        <div class="service sticky-note left">
           <div class="service--description">
             <h3>Doplnění</h3>
             <p class="service--description--time-wrapper">
@@ -228,7 +282,7 @@
                 />
               </svg>
               <span class="service--description--time-duration"
-                >2 hod 15 min</span
+                >2 h 15 min</span
               >
             </p>
             <p>
@@ -238,9 +292,15 @@
             <p class="service-price">850 Kč</p>
           </div>
         </div>
+      </section>
 
+      <section class="services-wrapper">
         <div class="service-container-name">
-          <img src="img/doplnkove-sluzby.png" />
+          <img
+            src="img/doplnkove-sluzby.png"
+            alt="Doplňkové služby - ikona"
+            loading="lazy"
+          />
           <h2>Doplňkové služby</h2>
         </div>
 
@@ -299,9 +359,8 @@
             <p class="service-price">150 Kč</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-
     <script src="header_loader.js"></script>
   </body>
 </html>
