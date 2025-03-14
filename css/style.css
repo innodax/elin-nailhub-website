@@ -554,7 +554,8 @@ p {
 /* SECTIONS */
 /*****************************************************/
 
-.section-first {
+.section-studio {
+  padding: 9.6rem 0;
   background-color: white;
 }
 
