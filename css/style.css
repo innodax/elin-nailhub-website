@@ -51,14 +51,10 @@ p {
   cursor: pointer;
 }
 
-.button:hover,
-.button:active {
-}
-
 .page {
-  /* position: relative; */
-  /* width: 100%; */
-  /* margin-top: 100px; */
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .image-cover-container {
@@ -198,9 +194,6 @@ p {
   vertical-align: middle;
 }
 
-.content--text {
-}
-
 .content--image {
   display: inline-block;
   width: 400px;
@@ -241,9 +234,6 @@ p {
 .service-container-name img {
   height: 100px;
   margin: 0 24px;
-}
-
-.service {
 }
 
 .service--description {
@@ -566,4 +556,65 @@ p {
 
 .section-first {
   background-color: white;
+}
+
+/*****************************************************/
+/* FOOTER */
+/*****************************************************/
+
+.footer {
+  padding: 9.6rem 0;
+}
+
+.footer-grid {
+  grid-template-columns: 0.75fr 0.75fr 1fr 2.25fr;
+}
+
+.footer-logo {
+  display: block;
+  max-height: 5rem;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+
+  list-style: none;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  color: var(--grey);
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.footer-description {
+  font-size: 1.6rem;
+  color: var(--grey);
 }
