@@ -39,10 +39,12 @@ Paragraph default: 1.6
 /*****************************************************/
 /* GENERAL COMPONENTS */
 /*****************************************************/
+
 :root {
   --pink-background: #ffe8f5;
   --pink-medium: #906f8d;
   --pink-medium-lighter: #b98eb5;
+  --pink-medium-darker: #7c5f79;
 
   --pink-dark-text: #523f50;
   --pink-dark: #ff3366;
@@ -50,12 +52,16 @@ Paragraph default: 1.6
   --pink-light: #ffd6e0;
   --pink-lighter: #ffebf0;
 
-  --background-color: #f5f5f5;
   --text-color: #151014;
   --grey: #888;
 
   --btn-border-radius: 15px;
 }
+
+/*****************************************************/
+/* GRIDS AND CONTAINERS */
+/*****************************************************/
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -75,9 +81,13 @@ Paragraph default: 1.6
   grid-template-columns: repeat(3, 1fr);
 }
 
+/*****************************************************/
+/* HEADINGS */
+/*****************************************************/
+
 .heading-primary,
 .heading-secondary {
-  font-family: "League Script", sans-serif;
+  font-family: "Gwendolyn", sans-serif;
   font-weight: 500;
   color: var(--pink-dark-text);
 }
@@ -86,17 +96,22 @@ Paragraph default: 1.6
   /* font-family: "Rubik", sans-serif; */
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Raleway", sans-serif; */
-  font-size: 7.4rem;
+  font-size: 9.6em;
   margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
-  font-size: 3.6rem;
+  font-size: 4.8rem;
   margin-bottom: 3.2rem;
 }
 
+/*****************************************************/
+/* BUTTONS */
+/*****************************************************/
+
 .btn:link,
 .btn:visited {
+  position: relative;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -104,51 +119,49 @@ Paragraph default: 1.6
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: var(--btn-border-radius);
-  transition: all 0.4s;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.btn--full:link,
-.btn--full:visited {
-  position: relative;
-  color: white;
-  background-color: var(--pink-medium);
-}
-/* 
-.btn--full:hover,
-.btn--full:active {
-  color: white;
-  background-color: var(--pink-medium-lighter);
-} */
-
-.btn--full::before {
+.btn::before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 0;
-  background: var(---pink-medium-lighter);
-  transition: height 0.3s ease-out;
+  width: 0;
+  height: 100%;
+  transition: width 0.4s ease-out;
   z-index: -1;
 }
 
-.btn--full:hover::before,
-.btn--full:active::before {
-  height: 100%;
+.btn:hover::before,
+.btn:active::before {
+  width: 100%;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: white;
+  background-color: var(--pink-medium);
+}
+
+.btn--full::before {
+  background: var(--pink-medium-darker);
 }
 
 .btn--outline:link,
 .btn--outline:visited {
   color: var(--text-color);
   background-color: white;
-  /* box-shadow: inset 0 0 0 3px var(--pink-dark); */
 }
 
-.btn--outline:hover,
-.btn--outline:active {
-  color: var(--text-color);
-  background-color: white;
+.btn--outline::before {
+  background: var(--pink-background);
 }
+
+/*****************************************************/
+/* SETTINGS */
+/*****************************************************/
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
