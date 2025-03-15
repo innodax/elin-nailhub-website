@@ -1,12 +1,16 @@
 :root {
-  --pink-dark-text: #b34e68;
+  --pink-background: #ffe8f5;
+  --pink-medium: #906f8d;
+  --pink-medium-lighter: #b98eb5;
+
+  --pink-dark-text: #523f50;
   --pink-dark: #ff3366;
-  --pink-medium: #ff7094;
+
   --pink-light: #ffd6e0;
   --pink-lighter: #ffebf0;
-  --pink-background: #fff1f4;
+
   --background-color: #f5f5f5;
-  --text-color: #343a40;
+  --text-color: #151014;
   --grey: #888;
 
   --btn-border-radius: 15px;
@@ -27,7 +31,7 @@ body {
   position: relative;
   color: var(--text-color);
   /* background-color: var(--background-color); */
-  background-color: #fff1f4;
+  background-color: var(--pink-background);
   font-family: "Nunito", sans-serif;
 }
 
@@ -427,8 +431,7 @@ p {
   left: 0;
   width: 100%;
   background-color: var(--pink-background);
-  /* background: white; */
-  /* border-bottom: 1px solid var(--pink-light); */
+  /* background-color: transparent; */
   z-index: 100;
 }
 
@@ -466,6 +469,7 @@ p {
 .header-nav-link {
   position: relative;
   display: inline-block;
+  font-family: "Tinos Static", serif;
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 3px;
@@ -529,8 +533,15 @@ p {
 /*****************************************************/
 
 .section-hero {
-  background-color: var(--pink-background);
+  position: relative;
+  height: 100vh;
   padding: 9.6rem 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../img/bg-crystal.png);
+  background-size: cover;
 }
 
 .hero {
@@ -557,6 +568,21 @@ p {
 .section-studio {
   padding: 9.6rem 0;
   background-color: white;
+}
+
+.section-services {
+  padding: 9.6rem 0;
+  background-color: var(--pink-background);
+}
+
+.section-contact {
+  padding: 9.6rem 0;
+  background-color: white;
+}
+
+.section-booking {
+  padding: 9.6rem 0;
+  background-color: var(--pink-background);
 }
 
 /*****************************************************/

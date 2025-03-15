@@ -39,7 +39,23 @@ Paragraph default: 1.6
 /*****************************************************/
 /* GENERAL COMPONENTS */
 /*****************************************************/
+:root {
+  --pink-background: #ffe8f5;
+  --pink-medium: #906f8d;
+  --pink-medium-lighter: #b98eb5;
 
+  --pink-dark-text: #523f50;
+  --pink-dark: #ff3366;
+
+  --pink-light: #ffd6e0;
+  --pink-lighter: #ffebf0;
+
+  --background-color: #f5f5f5;
+  --text-color: #151014;
+  --grey: #888;
+
+  --btn-border-radius: 15px;
+}
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -55,10 +71,14 @@ Paragraph default: 1.6
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .heading-primary,
 .heading-secondary {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 700;
+  font-family: "League Script", sans-serif;
+  font-weight: 500;
   color: var(--pink-dark-text);
 }
 
@@ -66,7 +86,7 @@ Paragraph default: 1.6
   /* font-family: "Rubik", sans-serif; */
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Raleway", sans-serif; */
-  font-size: 6.2rem;
+  font-size: 7.4rem;
   margin-bottom: 3.2rem;
 }
 
@@ -80,6 +100,7 @@ Paragraph default: 1.6
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  font-family: "Tinos Static", serif;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: var(--btn-border-radius);
@@ -88,21 +109,39 @@ Paragraph default: 1.6
 
 .btn--full:link,
 .btn--full:visited {
+  position: relative;
   color: white;
   background-color: var(--pink-medium);
 }
-
+/* 
 .btn--full:hover,
 .btn--full:active {
   color: white;
-  background-color: var(--pink-dark);
+  background-color: var(--pink-medium-lighter);
+} */
+
+.btn--full::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: var(---pink-medium-lighter);
+  transition: height 0.3s ease-out;
+  z-index: -1;
+}
+
+.btn--full:hover::before,
+.btn--full:active::before {
+  height: 100%;
 }
 
 .btn--outline:link,
 .btn--outline:visited {
   color: var(--text-color);
   background-color: white;
-  box-shadow: inset 0 0 0 3px var(--pink-dark);
+  /* box-shadow: inset 0 0 0 3px var(--pink-dark); */
 }
 
 .btn--outline:hover,
