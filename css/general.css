@@ -58,6 +58,33 @@ Paragraph default: 1.6
   --btn-border-radius: 15px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  color: var(--text-color);
+  background-color: var(--pink-background);
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
 /*****************************************************/
 /* GRIDS AND CONTAINERS */
 /*****************************************************/
