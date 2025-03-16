@@ -2,6 +2,7 @@
   --pink-background: #ffe8f5;
   --pink-light: #ffbbd7;
   --pink-medium: #906f8d;
+  --pink-medium-darker: #7c5f79;
   --pink-dark-text: #523f50;
   --text-color: #151014;
   --grey: #888;
@@ -486,8 +487,53 @@ body:not(.sticky) .header {
 }
 
 .section-booking {
-  padding: 9.6rem 0;
-  background-color: var(--pink-background);
+  padding: 9.6rem 0 12.8rem 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/bg-crystal.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--pink-medium-darker),
+    var(--pink-medium)
+  );
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+.booking-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: white;
+}
+
+.section-booking .heading-secondary {
+  color: white;
+}
+
+.booking-description {
+  margin-bottom: 4.8rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.booking-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 187, 215, 0.3),
+      rgba(255, 232, 245, 0.3)
+    ),
+    url("../img/booking-img.avif");
+  background-size: cover;
+  background-position: center;
 }
 
 /*****************************************************/
@@ -495,7 +541,8 @@ body:not(.sticky) .header {
 /*****************************************************/
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid var(--pink-light);
 }
 
 .footer-grid {
