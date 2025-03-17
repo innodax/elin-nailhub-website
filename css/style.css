@@ -474,6 +474,49 @@ body:not(.sticky) .header {
   margin-top: calc(100vh - 9.6rem);
   padding: 9.6rem 0;
   background-color: white;
+  align-items: center;
+}
+
+.studio-grid {
+  grid-template-columns: 1fr 3fr;
+}
+
+.studio-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studio-img-box::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.studio-img-box::before {
+  width: 90%;
+  padding-bottom: 90%;
+  background-color: #f8dfff;
+  z-index: 0;
+}
+
+.studio-img {
+  width: 87%;
+  z-index: 5;
+}
+
+.studio-description {
+  border-left: 1px solid #f8dfff;
+  padding-left: 11rem;
+}
+
+.section-studio .btn {
+  margin-top: 2.4rem;
 }
 
 .section-services {
