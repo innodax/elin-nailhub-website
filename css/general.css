@@ -132,6 +132,11 @@ p {
   margin-bottom: 3.2rem;
 }
 
+.heading-tertiary {
+  font-family: "Tinos Static", serif;
+  font-size: 2rem;
+}
+
 /*****************************************************/
 /* BUTTONS */
 /*****************************************************/

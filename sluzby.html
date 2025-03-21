@@ -9,269 +9,163 @@
     />
     <title>Elin Nailhub - nehtové studio v Brně</title>
 
-    <!-- Open Graph pro Facebook a další -->
-    <meta property="og:title" content="Elin Nailhub - nehtové studio v Brně" />
-    <meta
-      property="og:description"
-      content="Profesionální manikúra a nehtové služby v Brně."
-    />
-    <meta
-      property="og:image"
-      content="https://www.elinnailhub.cz/img/social-preview.jpg"
-    />
-    <meta property="og:url" content="https://www.elinnailhub.cz" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:title" content="Elin Nailhub - nehtové studio v Brně" />
-    <meta
-      name="twitter:description"
-      content="Profesionální manikúra a nehtové služby v Brně."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.elinnailhub.cz/img/social-preview.jpg"
-    />
-
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&family=Hubballi&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
-    <link rel="canonical" href="https://www.elinnailhub.cz" />
+    <script defer src="js/header_loader.js"></script>
+    <script defer src="js/footer_loader.js"></script>
+    <script defer src="js/year_loader.js"></script>
   </head>
 
   <body>
-    <!-- header -->
-    <header id="header-container"></header>
-
     <!-- page -->
-    <div class="page">
-      <section class="services-wrapper">
-        <div class="service-container-name">
+    <div class="services-page">
+      <!-- header -->
+      <header id="header-container"></header>
+
+      <!-- Natural nails -->
+      <section class="services-grid">
+        <div class="heading-container">
           <img
+            class="heading-img"
             src="img/prirozene-nehty.png"
-            alt="Přirozené nehty - ikona"
+            alt="Přirozené nehty"
             loading="lazy"
           />
-          <h2>Přirozený vzhled</h2>
+          <h2 class="heading-secondary">Přirozený vzhled</h2>
         </div>
-        <div class="service sticky-note left">
-          <div class="service--description">
-            <h3 class="fancy">Hygienická manikúra</h3>
-            <p>Úprava délky a tvaru nehtů, úprava kůžičky a hydratace.</p>
 
-            <div class="service-icon-wrapper">
+        <div class="service sticky-note left">
+          <div class="service-overview">
+            <h3 class="heading-tertiary">Hygienická manikúra</h3>
+            <p>
+              Péče o kutikulu, zapilování volného okraje nehtu dle přání,
+              hydratace.
+            </p>
+            <div class="icons-wrapper">
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m7.848 8.25 1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863 2.077-1.199m0-3.328a4.323 4.323 0 0 1 2.068-1.379l5.325-1.628a4.5 4.5 0 0 1 2.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.33 4.33 0 0 0 10.607 12m3.736 0 7.794 4.5-.802.215a4.5 4.5 0 0 1-2.48-.043l-5.326-1.629a4.324 4.324 0 0 1-2.068-1.379M14.343 12l-2.882 1.664"
-                  />
-                </svg>
+                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
                 <span>Hygienická manikúra</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m15 11.25 1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 1 0-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25 12.75 9"
-                  />
-                </svg>
+                  name="eyedrop-outline"
+                ></ion-icon>
                 <span>Výživný olejíček</span>
               </div>
             </div>
-            <p class="service-price">550 Kč</p>
+            <p class="service-price">500 Kč</p>
           </div>
         </div>
 
         <div class="service sticky-note right">
-          <div class="service--description">
-            <h3>P-shine (japonská manikúra)</h3>
+          <div class="service-overview">
+            <h3 class="heading-tertiary">P-shine (japonská manikúra)</h3>
             <p>
-              Speciální pasta s vitamíny a minerály zalešťovaná do nehtů pro
-              lesk, pevnost a růst.
+              Zalešťování speciální pasty a pudru do přírodního nehtu pro
+              přirozený lesk.
             </p>
-            <div class="service-icon-wrapper">
+            <div class="icons-wrapper">
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"
-                  />
-                </svg>
+                  name="trash-bin-outline"
+                ></ion-icon>
                 <span>Odstranění starého materiálu</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m7.848 8.25 1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863 2.077-1.199m0-3.328a4.323 4.323 0 0 1 2.068-1.379l5.325-1.628a4.5 4.5 0 0 1 2.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.33 4.33 0 0 0 10.607 12m3.736 0 7.794 4.5-.802.215a4.5 4.5 0 0 1-2.48-.043l-5.326-1.629a4.324 4.324 0 0 1-2.068-1.379M14.343 12l-2.882 1.664"
-                  />
-                </svg>
+                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
                 <span>Hygienická manikúra</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon class="service-icon" name="leaf-outline"></ion-icon>
+                <span>Vitamínová pasta</span>
+              </div>
+              <div class="service-icon-container">
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m15 11.25 1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 1 0-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25 12.75 9"
-                  />
-                </svg>
+                  name="eyedrop-outline"
+                ></ion-icon>
                 <span>Výživný olejíček</span>
               </div>
             </div>
-            <p class="service-price">700 Kč</p>
+            <p class="service-price">600 Kč</p>
+          </div>
+        </div>
+
+        <div class="service sticky-note left">
+          <div class="service-overview">
+            <h3 class="heading-tertiary">Odstranění starého materiálu</h3>
+            <p>
+              Odstranění staré nehtové modeláže. Pouze jako samostatná služba.
+            </p>
+            <div class="icons-wrapper">
+              <div class="service-icon-container">
+                <ion-icon
+                  class="service-icon"
+                  name="trash-bin-outline"
+                ></ion-icon>
+                <span>Odstranění starého materiálu</span>
+              </div>
+            </div>
+            <p class="service-price">300 Kč</p>
           </div>
         </div>
       </section>
 
-      <section class="services-wrapper">
-        <div class="service-container-name">
+      <!-- Gel nail -->
+      <section class="services-grid">
+        <div class="heading-container">
           <img
-            src="img/lakovani.png"
-            alt="Lakování gel-lakem - ikona"
+            class="heading-img"
+            src="img/prodluzovani.png"
+            alt="Lakování gel lakem"
             loading="lazy"
           />
-          <h2>Lakování gel-lakem</h2>
+          <h2 class="heading-secondary">Lakování</h2>
         </div>
+
         <div class="service sticky-note right">
-          <div class="service--description">
-            <h3>Klasik</h3>
+          <div class="service-overview">
+            <h3 class="heading-tertiary">Gel lak</h3>
             <p>
-              Gel-lak se vytvrzuje v UV/LED lampě, což zajistí krásný lesk a až
+              Vytvrzený gel lak zajišťuje krásný lesk a zpevnění nehtů až na
               několik týdnů.
             </p>
-            <div class="service-icon-wrapper">
+            <div class="icons-wrapper">
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"
-                  />
-                </svg>
+                  name="trash-bin-outline"
+                ></ion-icon>
                 <span>Odstranění starého materiálu</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m7.848 8.25 1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863 2.077-1.199m0-3.328a4.323 4.323 0 0 1 2.068-1.379l5.325-1.628a4.5 4.5 0 0 1 2.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.33 4.33 0 0 0 10.607 12m3.736 0 7.794 4.5-.802.215a4.5 4.5 0 0 1-2.48-.043l-5.326-1.629a4.324 4.324 0 0 1-2.068-1.379M14.343 12l-2.882 1.664"
-                  />
-                </svg>
+                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
                 <span>Hygienická manikúra</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
-                  />
-                </svg>
-                <span>Lakování gel-lakem</span>
+                <ion-icon class="service-icon" name="brush-outline"></ion-icon>
+                <span>Lakování gel lakem a zdobení až 2 nehtů</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m15 11.25 1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 1 0-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25 12.75 9"
-                  />
-                </svg>
+                  name="eyedrop-outline"
+                ></ion-icon>
                 <span>Výživný olejíček</span>
               </div>
             </div>
@@ -280,197 +174,136 @@
         </div>
 
         <div class="service sticky-note left">
-          <div class="service--description">
-            <h3>Premium</h3>
-            <p>
-              Navíc zpevnění gelem/polygelem, oprava nehtů a složitější
-              dekorativní zdobení.
-            </p>
-            <div class="service-icon-wrapper">
+          <div class="service-overview">
+            <h3 class="heading-tertiary">Modeláž gelem/polygelem</h3>
+            <p>Zpevňuje křehké nehty a harmonizuje jejich tvar.</p>
+            <div class="icons-wrapper">
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"
-                  />
-                </svg>
+                  name="trash-bin-outline"
+                ></ion-icon>
                 <span>Odstranění starého materiálu</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m7.848 8.25 1.536.887M7.848 8.25a3 3 0 1 1-5.196-3 3 3 0 0 1 5.196 3Zm1.536.887a2.165 2.165 0 0 1 1.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 1 1-5.196 3 3 3 0 0 1 5.196-3Zm1.536-.887a2.165 2.165 0 0 0 1.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863 2.077-1.199m0-3.328a4.323 4.323 0 0 1 2.068-1.379l5.325-1.628a4.5 4.5 0 0 1 2.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.33 4.33 0 0 0 10.607 12m3.736 0 7.794 4.5-.802.215a4.5 4.5 0 0 1-2.48-.043l-5.326-1.629a4.324 4.324 0 0 1-2.068-1.379M14.343 12l-2.882 1.664"
-                  />
-                </svg>
+                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
                 <span>Hygienická manikúra</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.867 19.125h.008v.008h-.008v-.008Z"
-                  />
-                </svg>
-                <span>Zpevnění a oprava nehtů</span>
+                  name="bandage-outline"
+                ></ion-icon>
+                <span>Opravy nebo modeláž nehtů</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
-                  />
-                </svg>
-                <span>Lakování gel-lakem</span>
+                <ion-icon class="service-icon" name="brush-outline"></ion-icon>
+                <span>Lakování gel lakem a zdobení až 2 nehtů</span>
               </div>
               <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
+                <ion-icon
                   class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
-                  />
-                </svg>
-                <span>Pokročilé zdobení</span>
-              </div>
-              <div class="service-icon-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="service-icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m15 11.25 1.5 1.5.75-.75V8.758l2.276-.61a3 3 0 1 0-3.675-3.675l-.61 2.277H12l-.75.75 1.5 1.5M15 11.25l-8.47 8.47c-.34.34-.8.53-1.28.53s-.94.19-1.28.53l-.97.97-.75-.75.97-.97c.34-.34.53-.8.53-1.28s.19-.94.53-1.28L12.75 9M15 11.25 12.75 9"
-                  />
-                </svg>
+                  name="eyedrop-outline"
+                ></ion-icon>
                 <span>Výživný olejíček</span>
               </div>
             </div>
-            <p class="service-price">850 Kč</p>
+            <p class="service-price">750 Kč</p>
           </div>
-        </div>
-      </section>
-
-      <section class="services-wrapper">
-        <div class="service-container-name">
-          <img
-            src="img/prodluzovani.png"
-            alt="Prodloužení nehtů - ikona"
-            loading="lazy"
-          />
-          <h2>Prodloužení nehtů</h2>
         </div>
 
         <div class="service sticky-note right">
-          <div class="service--description">
-            <h3>Klasik</h3>
-            <p>Prodloužení nehtů malé až střední délky.</p>
-            <p class="service-price">850 Kč</p>
-          </div>
-        </div>
-
-        <div class="service sticky-note left">
-          <div class="service--description">
-            <h3>Premium</h3>
-            <p>Prodloužení nehtů libovolné délky a zdobení.</p>
-            <p class="service-price">1000 Kč</p>
-          </div>
-        </div>
-
-        <div class="service sticky-note left">
-          <div class="service--description">
-            <h3>Doplnění</h3>
-            <p>
-              Doplnění modeláže provedené u nás ve studiu v předchozích 5
-              týdnech..
-            </p>
-            <p class="service-price">850 Kč</p>
+          <div class="service-overview">
+            <h3 class="heading-tertiary">Prodloužení nehtů</h3>
+            <p>Umělé prodloužení nehtů na šablonu nebo přes dual formu.</p>
+            <div class="icons-wrapper">
+              <div class="service-icon-container">
+                <ion-icon
+                  class="service-icon"
+                  name="trash-bin-outline"
+                ></ion-icon>
+                <span>Odstranění starého materiálu</span>
+              </div>
+              <div class="service-icon-container">
+                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
+                <span>Hygienická manikúra</span>
+              </div>
+              <div class="service-icon-container">
+                <ion-icon
+                  class="service-icon"
+                  name="bandage-outline"
+                ></ion-icon>
+                <span>Opravy nebo modeláž nehtů</span>
+              </div>
+              <div class="service-icon-container">
+                <ion-icon
+                  class="service-icon"
+                  name="chevron-expand-outline"
+                ></ion-icon>
+                <span>Prodloužení nehtů</span>
+              </div>
+              <div class="service-icon-container">
+                <ion-icon class="service-icon" name="brush-outline"></ion-icon>
+                <span>Lakování gel lakem a zdobení až 2 nehtů</span>
+              </div>
+              <div class="service-icon-container">
+                <ion-icon
+                  class="service-icon"
+                  name="eyedrop-outline"
+                ></ion-icon>
+                <span>Výživný olejíček</span>
+              </div>
+            </div>
+            <p class="service-price">900 Kč</p>
           </div>
         </div>
       </section>
 
-      <section class="services-wrapper">
-        <div class="service-container-name">
+      <!-- Others -->
+      <section class="services-grid">
+        <div class="heading-container">
           <img
+            class="heading-img"
             src="img/doplnkove-sluzby.png"
-            alt="Doplňkové služby - ikona"
+            alt="Doplňkové služby"
             loading="lazy"
           />
-          <h2>Doplňkové služby</h2>
+          <h2 class="heading-secondary">Doplňkové služby</h2>
         </div>
 
         <div class="service sticky-note left">
-          <div class="service--description">
-            <h3>Parafínový zábal</h3>
+          <div class="service-overview">
+            <h3 class="heading-tertiary">Zdobení a design</h3>
             <p>
-              Parafínové zábaly na ruce zlepšují prokrvení, uvolňují svaly a
-              klouby, vypínají, zjemňují a příjemně prohřívají pokožku.
+              Složitejší zdobení nebo zdobení více nehtů dle přání. Cena se
+              odvíjí od složitosti.
             </p>
-            <p class="service-price">150 Kč</p>
+            <p class="service-price">50-300 Kč</p>
           </div>
         </div>
 
         <div class="service sticky-note right">
-          <div class="service--description">
-            <h3>Masáž rukou</h3>
+          <div class="service-overview">
+            <h3 class="heading-tertiary">Masáž rukou</h3>
             <p>
-              Masáž rukou přináší úlevu a relaxaci pro Vaše unavené a namáhané
-              ruce.
+              Přináší úlevu a relaxaci pro Vaše unavené a namáhané ruce. Při
+              objednání spolu s jinou službou bude cena 150 Kč.
             </p>
-            <p class="service-price">150 Kč</p>
+            <p class="service-price">150-200 Kč</p>
           </div>
         </div>
       </section>
     </div>
-    <script src="header_loader.js"></script>
+
+    <footer id="footer-container"></footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
