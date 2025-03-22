@@ -74,7 +74,7 @@ html {
 body {
   position: relative;
   color: var(--text-color);
-  background-color: var(--pink-background);
+  background-color: white;
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
 }
@@ -93,6 +93,10 @@ p {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2px;
+}
+
+.section {
+  padding: 9.6rem 0;
 }
 
 .grid {
