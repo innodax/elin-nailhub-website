@@ -422,6 +422,7 @@ body:not(.sticky) .header {
 .footer {
   padding: 12.8rem 0;
   background-color: var(--pink-background);
+  border-top: 1px solid var(--pink-light);
 }
 
 .footer-grid {
@@ -589,10 +590,6 @@ body:not(.sticky) .header {
   position: relative;
   display: inline-block;
   padding-bottom: 0.8rem;
-  margin-bottom: 2rem;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--pink-dark-text);
 }
 
 .services-grid .heading-tertiary::before {
@@ -713,4 +710,44 @@ body:not(.sticky) .header {
   height: 35px;
   z-index: -1;
   background-color: var(--pink-light);
+}
+
+/*****************************************************/
+/* SERVICES PAGE */
+/*****************************************************/
+
+.contact-where {
+  padding: 9.6rem 0;
+  background-color: white;
+}
+
+.contact-where .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  color: var(--pink-medium);
+  transition: all 0.3s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  color: var(--pink-light);
+}
+
+.contact-where .map {
+  margin-top: 4.8rem;
+}
+
+.contact-how {
+  padding: 9.6rem 0;
+  background-color: var(--pink-background);
+}
+
+.contact-how .heading-secondary {
+  justify-self: center;
 }

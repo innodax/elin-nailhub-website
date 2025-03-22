@@ -139,6 +139,10 @@ p {
 .heading-tertiary {
   font-family: "Tinos Static", serif;
   font-size: 2rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--pink-dark-text);
 }
 
 /*****************************************************/

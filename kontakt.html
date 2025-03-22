@@ -9,91 +9,83 @@
     />
     <title>Elin Nailhub - nehtové studio v Brně</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&family=Hubballi&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="img/favicon/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
     />
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/header_loader.js"></script>
+    <script defer src="js/footer_loader.js"></script>
+    <script defer src="js/year_loader.js"></script>
   </head>
 
   <body>
+    <!-- page -->
     <!-- header -->
     <header id="header-container"></header>
 
     <!-- page sections -->
-    <section class="section-studio">
-      <div class="container">
+    <section class="contact-where">
+      <div class="container address">
         <h2 class="heading-secondary">Kde nás najdete?</h2>
+        <p>
+          Monika Kramářová |
+          <a class="contact-link" href="tel:+420777111222">+420 777 111 222</a>
+          |
+          <a class="contact-link" href="mailto:info@infoinfo.cz"
+            >info@infoinfo.cz</a
+          >
+        </p>
         <p>Šilingrovo nám. 257/3, 602 00 Brno město</p>
-        <p>hana@salonmarilyn.cz | Tel: +420 728 101 838</p>
+      </div>
+      <div class="map">
+        <div style="-webkit-filter: grayscale(100%); filter: grayscale(75%)">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.4211862284405!2d16.602880977090265!3d49.19256907713041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294516b7aaaab%3A0x74d5212d6f3f0541!2zxaBpbGluZ3Jvdm8gbsOhbS4gMywgNjAyIDAwIEJybm8tc3TFmWVk!5e0!3m2!1sen!2scz!4v1740345554774!5m2!1sen!2scz"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </section>
 
-    <section class="section-services">
+    <section class="contact-how">
       <div class="container">
         <h2 class="heading-secondary">Jak se k nám dostanete?</h2>
         <div class="grid grid--3-cols">
           <div>
-            <h3>Autem</h3>
-            <p><b>Parkovací dům Domini Park</b></p>
-            <p>Husova 712/14, přibližně 300 metrů od studia.</p>
-            <p>Tento parkovací dům nabízí kryté parkování v centru města.</p>
-          </div>
-          <div>
-            <h3>MHD</h3>
+            <h3 class="heading-tertiary">Autem</h3>
             <p>
-              Přímo na Šilingrovo náměstí přijíždějí tramvajové linky 5, 6 a 12.
+              Přibližně 300 metrů od studia se nachází parkovací dům Domini Park
+              na adrese Husova 712/14.
             </p>
           </div>
           <div>
-            <h3>Pěšky</h3>
+            <h3 class="heading-tertiary">MHD</h3>
             <p>
-              Pohodlně se k nám dostanete také pěšky. Nacházíme se asi 500 metrů
-              od Hlavního nádraží, 600 metrů od zastávky Česká a 400 metrů od
-              Náměstí Svobody.
+              Přímo na Šilingrovo náměstí přijíždějí na stejnojmennou zastávku
+              tramvajové linky 5, 6 a 12.
+            </p>
+          </div>
+          <div>
+            <h3 class="heading-tertiary">Pěšky</h3>
+            <p>
+              Studio se nachází asi 500 metrů od Hlavního nádraží, 600 metrů od
+              zastávky Česká a 400 metrů od Náměstí Svobody.
             </p>
           </div>
         </div>
@@ -101,18 +93,6 @@
     </section>
 
     <footer id="footer-container"></footer>
-
-    <div style="-webkit-filter: grayscale(100%); filter: grayscale(75%)">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.4211862284405!2d16.602880977090265!3d49.19256907713041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294516b7aaaab%3A0x74d5212d6f3f0541!2zxaBpbGluZ3Jvdm8gbsOhbS4gMywgNjAyIDAwIEJybm8tc3TFmWVk!5e0!3m2!1sen!2scz!4v1740345554774!5m2!1sen!2scz"
-        width="100%"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
 
     <script src="header_loader.js"></script>
     <script src="footer_loader.js"></script>
