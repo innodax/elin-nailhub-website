@@ -13,13 +13,6 @@
   /* --pink-medium-lighter: #b98eb5; */
 }
 
-.calendar-container {
-  margin-top: 150px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 /*****************************************************/
 /* HEADER */
 /*****************************************************/
@@ -760,4 +753,12 @@ body:not(.sticky) .header {
 
 .contact-how .heading-secondary {
   justify-self: center;
+}
+
+/*****************************************************/
+/* CONTACT PAGE */
+/*****************************************************/
+
+.calendar {
+  margin-top: 4.8rem;
 }
