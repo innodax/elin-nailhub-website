@@ -778,7 +778,7 @@ body:not(.sticky) .header {
   height: 100%;
   background-color: var(--pink-medium);
   border-radius: 50%;
-  z-index: 0;
+  z-index: 10;
 }
 
 .contact-icon {
@@ -786,7 +786,7 @@ body:not(.sticky) .header {
   stroke: white;
   font-size: 2rem;
   color: white;
-  z-index: 1;
+  z-index: 20;
 }
 
 /*****************************************************/
