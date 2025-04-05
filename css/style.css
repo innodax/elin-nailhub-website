@@ -37,9 +37,9 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-left: 50px;
+  margin-left: 5rem;
   align-items: center;
-  gap: 48px;
+  gap: 4.8rem;
   min-width: 0;
 }
 
@@ -71,7 +71,7 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 10px;
+  height: 1rem;
   background: rgb(255, 187, 215, 0.7);
   transform: skew(-12deg);
   transition: width 0.3s ease-out;
@@ -304,7 +304,7 @@ body:not(.sticky) .header {
 
 .services-img-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0.8rem;
   padding: 3.6em 0.8rem 0.5rem 0.8rem;
 }
@@ -467,7 +467,7 @@ body:not(.sticky) .header {
 
 .copyright-container {
   display: flex;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   align-items: center;
   justify-content: center;
   height: 2.4rem;
