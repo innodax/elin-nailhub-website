@@ -527,12 +527,6 @@ body:not(.sticky) .header {
   transform: rotate(-1deg);
 }
 
-.sticky-note.left:hover,
-.sticky-note.right:hover {
-  transform: rotate(0deg);
-  transition: transform 0.4s ease-in-out;
-}
-
 /* TODO */
 .sticky-note.left::before,
 .sticky-note.right::before {
