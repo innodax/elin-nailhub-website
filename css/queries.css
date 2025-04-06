@@ -41,6 +41,10 @@
     gap: 8rem;
   }
 
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .hero-text-box,
   .hero-img-box {
     text-align: center;
@@ -197,6 +201,11 @@
 
   .grid--3-cols {
     grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
   }
 
   .flip-card-front {
