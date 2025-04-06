@@ -9,6 +9,28 @@
     />
     <title>Elin Nailhub - nehtové studio v Brně</title>
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Elin Nailhub – profesionální manikúra v Brně"
+    />
+    <meta
+      property="og:description"
+      content="Profesionální nehtové studio v Brně. Precizní manikúra, originální styly a relax v útulném prostředí."
+    />
+    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta property="og:url" content="https://nailhub.cz/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Elin Nailhub – manikúra v Brně" />
+    <meta
+      name="twitter:description"
+      content="Precizní manikúra, originální styly a relaxační péče. Vítej v Elin Nailhub."
+    />
+    <meta name="twitter:image" content="https://nailhub.cz/img/kolaz10.png" />
+
     <link rel="icon" href="img/favicon/favicon.png" />
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="manifest.webmanifest" />
@@ -26,6 +48,25 @@
 
     <script defer src="js/header_loader.js"></script>
     <script defer src="js/footer_loader.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Elin Nailhub",
+        "image": "https://nailhub.cz/img/kolaz10.png",
+        "description": "Profesionální nehtové studio v Brně. Precizní manikúra, moderní i klasické styly, relaxační služby.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Šilingrovo nám. 257/3",
+          "addressLocality": "Brno",
+          "postalCode": "602 00",
+          "addressCountry": "CZ"
+        },
+        "telephone": "+420731107590",
+        "url": "https://nailhub.cz",
+        "priceRange": "CZK"
+      }
+    </script>
   </head>
 
   <body>
@@ -49,7 +90,11 @@
             <a href="sluzby" class="btn btn--empty">Ceník</a>
           </div>
           <div class="hero-img-box">
-            <img src="img/kolaz10.png" class="hero-img" alt="Laky na nehty" />
+            <img
+              src="img/kolaz10.png"
+              class="hero-img"
+              alt="Obrázek ve tvaru luny s ženou, která má třpytivě nalakované nehty"
+            />
           </div>
         </div>
       </section>
@@ -63,7 +108,11 @@
           <div class="circle-img-box flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="circle-img" src="img/moni.png" />
+                <img
+                  class="circle-img"
+                  src="img/moni.png"
+                  alt="Monika Kramářová, profilový obrázek"
+                />
               </div>
               <div class="flip-card-back">
                 <p class="description">manikérka</p>
@@ -82,7 +131,7 @@
               momentu.
             </p>
             <p>♡ ♡ ♡ Budu se těšit  ♡ ♡ ♡</p>
-            <a href="studio" class="btn btn--outline">O studiu</a>
+            <a href="o-mne" class="btn btn--outline">Více o mně</a>
           </div>
         </div>
       </div>
@@ -97,22 +146,46 @@
         </p>
         <div class="services-img-grid">
           <div class="services-item">
-            <img class="services-img" src="img/services1.jpeg" />
+            <img
+              class="services-img"
+              src="img/services1.jpeg"
+              alt="Nehty s růžovým lakem a zdobením ve tvaru zmrzliny"
+            />
           </div>
           <div class="services-item">
-            <img class="services-img" src="img/services3.jpeg" />
+            <img
+              class="services-img"
+              src="img/services3.jpeg"
+              alt="Nehty s žlutým a růžovým lakem a francouzskou manikúrou na dvou nehtech"
+            />
           </div>
           <div class="services-item">
-            <img class="services-img" src="img/services4.jpeg" />
+            <img
+              class="services-img"
+              src="img/services4.jpeg"
+              alt="Nehty se zlatým mramorovým zdobením"
+            />
           </div>
           <div class="services-item">
-            <img class="services-img" src="img/services5.jpeg" />
+            <img
+              class="services-img"
+              src="img/services5.jpeg"
+              alt="Nehty s bílým lakem a modrou francouzskou manikúrou"
+            />
           </div>
           <div class="services-item">
-            <img class="services-img" src="img/services6.jpeg" />
+            <img
+              class="services-img"
+              src="img/services6.jpeg"
+              alt="Nehty s červeným a krémovým lakem a zdobením ve tvaru větvičky"
+            />
           </div>
           <div class="services-item">
-            <img class="services-img" src="img/services7.jpeg" />
+            <img
+              class="services-img"
+              src="img/services7.jpeg"
+              alt="Nehty s přirozeně vypadajícím lakem"
+            />
           </div>
         </div>
         <a href="sluzby" class="btn btn--full">Nabídka služeb</a>
@@ -127,7 +200,11 @@
           <div class="circle-img-box flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="circle-img" src="img/kontakt.png" />
+                <img
+                  class="circle-img"
+                  src="img/kontakt.png"
+                  alt="Mapa, kde se nachází studio"
+                />
               </div>
               <div class="flip-card-back">
                 <p class="description">studio</p>

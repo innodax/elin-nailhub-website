@@ -194,3 +194,11 @@ p {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
+.margin-top-sm {
+  margin-top: 1.6rem !important;
+}
+
+.text-center {
+  text-align: center;
+}

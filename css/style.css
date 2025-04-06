@@ -494,7 +494,6 @@ body:not(.sticky) .header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-bottom: 12.8rem;
 }
 
 .services-grid {
@@ -696,13 +695,29 @@ body:not(.sticky) .header {
   background-color: var(--pink-light);
 }
 
+.services-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 0 2.4rem 0;
+  margin: 4.8rem auto 4.8rem auto;
+  /* margin-bottom: 4.8rem; */
+
+  background-color: var(--pink-medium);
+}
+
+.services-cta .heading-secondary {
+  color: white;
+  margin-bottom: 2rem;
+}
 /*****************************************************/
 /* CONTACT PAGE */
 /*****************************************************/
 
 .studio-about,
 .contact-where {
-  padding-top: 2.4rem;
+  padding-top: 4.8rem;
   background-color: white;
 }
 
@@ -711,7 +726,6 @@ body:not(.sticky) .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .studio-about .studio-img-box {
@@ -726,14 +740,14 @@ body:not(.sticky) .header {
   margin: auto;
 }
 
-.contact-link:link,
-.contact-link:visited {
+.description-link:link,
+.description-link:visited {
   color: var(--pink-medium);
   transition: all 0.3s;
 }
 
-.contact-link:hover,
-.contact-link:active {
+.description-link:hover,
+.description-link:active {
   color: var(--pink-light);
 }
 
@@ -744,6 +758,14 @@ body:not(.sticky) .header {
 .studio-cert,
 .contact-how {
   background-color: var(--pink-background);
+}
+
+.cert-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  transition: all 0.4s;
 }
 
 .contact-how .heading-secondary {

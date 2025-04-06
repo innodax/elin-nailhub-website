@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elin Nailhub - profesionální nehtové studio v Brně. Nabízíme precizní manikúru, moderní i klasické nehtové styly a relaxační služby v útulném prostředí."
+      content="Rezervujte si termín pro svou manikúru ve studiu Elin Nailhub v centru Brna."
     />
-    <title>Elin Nailhub - nehtové studio v Brně</title>
+    <title>Rezervace | Elin Nailhub Brno</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rezervace termínu – Elin Nailhub Brno" />
+    <meta
+      property="og:description"
+      content="Rezervujte si termín pro manikúru v Elin Nailhub. Přehled volných termínů, kontakt a jednoduché objednání."
+    />
+    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta property="og:url" content="https://nailhub.cz/rezervace" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rezervace termínu – Elin Nailhub Brno"
+    />
+    <meta
+      name="twitter:description"
+      content="Přehled volných termínů a kontakt pro rezervaci manikúry v Elin Nailhub."
+    />
+    <meta name="twitter:image" content="https://nailhub.cz/img/kolaz10.png" />
 
     <link rel="icon" href="img/favicon/favicon.png" />
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -26,6 +48,23 @@
 
     <script defer src="js/header_loader.js"></script>
     <script defer src="js/footer_loader.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Elin Nailhub",
+        "url": "https://nailhub.cz/rezervace",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Šilingrovo nám. 257/3",
+          "addressLocality": "Brno",
+          "postalCode": "602 00",
+          "addressCountry": "CZ"
+        },
+        "telephone": "+420731107590",
+        "email": "info@nailhub.cz"
+      }
+    </script>
   </head>
 
   <body>
@@ -35,21 +74,33 @@
     <!-- page sections -->
     <section class="section studio-about">
       <div class="container about">
-        <h2 class="heading-secondary">Rezervace termínu</h2>
-        <p>
+        <h1 class="heading-secondary text-center">Rezervace termínu</h1>
+        <p class="text-center">
           V kalendáři naleznete volné termíny. Pro rezervaci mě prosím
           kontaktujte:
         </p>
-        <p>
-          <a class="contact-link" href="https://www.instagram.com/elin.nailhub/"
+        <p class="text-center">
+          <a
+            class="description-link"
+            href="https://www.instagram.com/elin.nailhub/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Instagram</a
           >
           |
-          <a class="contact-link" href="tel:+420777111222">+420 777 111 222</a>
-          (i WhatsApp) |
-          <a class="contact-link" href="mailto:info@infoinfo.cz"
-            >info@infoinfo.cz</a
+          <a class="description-link" href="tel:+420777111222"
+            >+420 731 107 590</a
           >
+          (i WhatsApp) |
+          <a class="description-link" href="mailto:info@nailhub.cz"
+            >info@nailhub.cz</a
+          >
+        </p>
+        <p class="text-center margin-top-sm">
+          Zajímá vás, jaké služby nabízím?
+          <a class="description-link" href="/sluzby"
+            >Přejděte na přehled služeb</a
+          >.
         </p>
         <iframe
           class="calendar"
@@ -59,11 +110,21 @@
           height="800"
           frameborder="0"
           scrolling="no"
+          aria-label="Kalendář s volnými termíny nehtového studia Elin Nailhub v Brně"
         ></iframe>
       </div>
     </section>
 
     <!-- footer -->
     <footer id="footer-container"></footer>
+
+    <script
+      type="module"
+      src="https://www.unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://www.unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

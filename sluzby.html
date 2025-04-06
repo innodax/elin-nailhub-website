@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elin Nailhub - profesionální nehtové studio v Brně. Nabízíme precizní manikúru, moderní i klasické nehtové styly a relaxační služby v útulném prostředí."
+      content="Seznam a ceník služeb Elin Nailhub, nehtového studia v centru Brna. Nabízí úpravu přirozených nehtů, lakování gel lakem i umělé prodloužení nehtů."
     />
-    <title>Elin Nailhub - nehtové studio v Brně</title>
+    <title>Služby a ceník | Elin Nailhub Brno</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Služby a ceník – Elin Nailhub Brno" />
+    <meta
+      property="og:description"
+      content="Kompletní nabídka manikérských služeb: přírodní nehty, gel lak, modeláž i relaxační doplňky. Přehled cen a možnost rezervace."
+    />
+    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta property="og:url" content="https://nailhub.cz/sluzby" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Služby a ceník – Elin Nailhub Brno" />
+    <meta
+      name="twitter:description"
+      content="Kompletní přehled péče o nehty – manikúra, gel lak, modeláž a více. Ceník a informace o službách."
+    />
 
     <link rel="icon" href="img/favicon/favicon.png" />
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -26,6 +44,23 @@
 
     <script defer src="js/header_loader.js"></script>
     <script defer src="js/footer_loader.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Elin Nailhub",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Šilingrovo nám. 257/3",
+          "addressLocality": "Brno",
+          "postalCode": "602 00",
+          "addressCountry": "CZ"
+        },
+        "telephone": "+420731107590",
+        "email": "info@nailhub.cz",
+        "url": "https://nailhub.cz/sluzby"
+      }
+    </script>
   </head>
 
   <body>
@@ -33,6 +68,8 @@
     <div class="services-page">
       <!-- header -->
       <header id="header-container"></header>
+
+      <h1 class="heading-secondary text-center">Nabídka služeb a ceník</h1>
 
       <!-- Natural nails -->
       <section class="services-grid">
@@ -344,6 +381,12 @@
           </div>
         </div>
       </section>
+
+      <div class="services-cta">
+      <p class="heading-secondary">
+        Vybrala sis?</p>
+        <a class="text-center btn btn--empty" href="/rezervace">Zarezervuj si termín</a>.
+      </p>
     </div>
 
     <!-- footer -->

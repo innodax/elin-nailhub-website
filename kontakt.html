@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Elin Nailhub - profesionální nehtové studio v Brně. Nabízíme precizní manikúru, moderní i klasické nehtové styly a relaxační služby v útulném prostředí."
+      content="Najdete nás v centru Brna na Šilingrově náměstí. Elin Nailhub – telefon, e-mail, adresa a dopravní spojení."
     />
-    <title>Elin Nailhub - nehtové studio v Brně</title>
+    <title>Kontakt | Elin Nailhub Brno</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kontakt – Elin Nailhub Brno" />
+    <meta
+      property="og:description"
+      content="Šilingrovo náměstí, Brno. Kontaktujte nás – telefon, e-mail, dopravní spojení a mapa."
+    />
+    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta property="og:url" content="https://nailhub.cz/kontakt" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kontakt – Elin Nailhub Brno" />
+    <meta
+      name="twitter:description"
+      content="Kontakt na nehtové studio Elin Nailhub – adresa, telefon, dostupnost."
+    />
+    <meta name="twitter:image" content="https://nailhub.cz/img/kolaz10.png" />
 
     <link rel="icon" href="img/favicon/favicon.png" />
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
@@ -26,6 +45,23 @@
 
     <script defer src="js/header_loader.js"></script>
     <script defer src="js/footer_loader.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Elin Nailhub",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Šilingrovo nám. 257/3",
+          "addressLocality": "Brno",
+          "postalCode": "602 00",
+          "addressCountry": "CZ"
+        },
+        "telephone": "+420731107590",
+        "email": "info@nailhub.cz",
+        "url": "https://nailhub.cz/kontakt"
+      }
+    </script>
   </head>
 
   <body>
@@ -35,16 +71,18 @@
     <!-- page sections -->
     <section class="section contact-where">
       <div class="container address">
-        <h2 class="heading-secondary">Kde nás najdete?</h2>
-        <p>
+        <h1 class="heading-secondary text-center">Kde nás najdete?</h1>
+        <p class="text-center">
           Monika Kramářová |
-          <a class="contact-link" href="tel:+420777111222">+420 777 111 222</a>
+          <a class="description-link" href="tel:+420731107590"
+            >+420 731 107 590</a
+          >
           |
-          <a class="contact-link" href="mailto:info@infoinfo.cz"
-            >info@infoinfo.cz</a
+          <a class="description-link" href="mailto:info@nailhub.cz"
+            >info@nailhub.cz</a
           >
         </p>
-        <p>Šilingrovo nám. 257/3, 602 00 Brno město</p>
+        <p class="text-center">Šilingrovo nám. 257/3, 602 00 Brno město</p>
       </div>
       <div class="map">
         <div style="-webkit-filter: grayscale(100%); filter: grayscale(75%)">
@@ -56,6 +94,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Mapa s polohou nehtového studia Elin Nailhub v Brně"
           ></iframe>
         </div>
       </div>
