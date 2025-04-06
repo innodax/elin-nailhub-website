@@ -195,6 +195,10 @@
     grid-template-columns: 1fr;
   }
 
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
   .flip-card-front {
     position: relative;
   }
@@ -203,17 +207,15 @@
     padding: 0 2.4rem;
   }
 
-  .section {
-    padding: 8rem 0;
+  .section.section-hero,
+  .section.studio-about,
+  .section.contact-where {
+    padding: 0 0 8rem 0;
   }
 
   .btn:link,
   .btn:visited {
     padding: 2.4rem 1.8rem;
-  }
-
-  .section-hero-wrapper .section {
-    padding: 0;
   }
 
   .hero {

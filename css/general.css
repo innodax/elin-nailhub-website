@@ -133,6 +133,8 @@ p {
   font-family: "Tinos Static", serif;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
+  line-height: 1;
+  align-self: center;
   border-radius: var(--btn-border-radius);
   z-index: 0;
   overflow: hidden;
