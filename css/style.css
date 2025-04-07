@@ -145,7 +145,7 @@ body:not(.sticky) .header {
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.5)
     ),
-    url(../img/bg-crystal.png);
+    url(../img/background.jpg);
   background-size: cover;
   z-index: 1;
 }
@@ -361,7 +361,7 @@ body:not(.sticky) .header {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.7)
     ),
-    url(../img/bg-crystal.png);
+    url(../img/background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -399,7 +399,7 @@ body:not(.sticky) .header {
       rgba(255, 187, 215, 0.3),
       rgba(255, 232, 245, 0.3)
     ),
-    url("../img/booking-img.avif");
+    url("../img/index-cta.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -490,7 +490,7 @@ body:not(.sticky) .header {
       rgba(255, 255, 255, 0.2),
       rgba(255, 255, 255, 0.5)
     ),
-    url(../img/bg-crystal.png);
+    url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
