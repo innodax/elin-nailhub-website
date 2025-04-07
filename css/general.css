@@ -72,6 +72,11 @@ p {
   padding: 9.6rem 0;
 }
 
+.section--first {
+  padding-top: 2.4rem;
+  background-color: white;
+}
+
 .grid {
   display: grid;
   gap: 9.6rem;
@@ -102,12 +107,10 @@ p {
 
 .heading-primary {
   font-size: 9.8em;
-  margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
   font-size: 4.8em;
-  margin-bottom: 3.2rem;
 }
 
 .heading-tertiary {
@@ -196,6 +199,18 @@ p {
 
 .margin-top-sm {
   margin-top: 1.6rem !important;
+}
+
+.margin-top-med {
+  margin-top: 3.2rem !important;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.2rem !important;
 }
 
 .text-center {

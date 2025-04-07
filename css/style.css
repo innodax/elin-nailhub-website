@@ -496,17 +496,10 @@ body:not(.sticky) .header {
   background-attachment: fixed;
 }
 
-.section-first {
-  padding-top: 4.8rem;
-  background-color: white;
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 4.8rem;
-  row-gap: 2.4rem;
-  background-color: white;
+  gap: 4.8rem;
   max-width: 140rem;
   margin: 0 auto 2rem auto;
   padding: 3.2rem 6.4rem;
@@ -559,11 +552,6 @@ body:not(.sticky) .header {
 .services-grid .heading-img {
   height: 8rem;
   margin: 0 2.4rem;
-}
-
-.services-grid .heading-secondary {
-  font-family: "Gwendolyn", sans-serif;
-  margin-bottom: 0;
 }
 
 .service-overview {
@@ -705,35 +693,26 @@ body:not(.sticky) .header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2.4rem 0 2.4rem 0;
+  padding: 2.4rem 0 4.8rem 0;
   margin: 4.8rem auto 4.8rem auto;
-  /* margin-bottom: 4.8rem; */
-
-  background-color: var(--pink-medium);
+  background-color: var(--pink-medium-darker);
 }
 
 .services-cta .heading-secondary {
   color: white;
-  margin-bottom: 2rem;
 }
 /*****************************************************/
 /* CONTACT PAGE */
 /*****************************************************/
 
-.studio-about,
-.contact-where {
-  padding-top: 4.8rem;
-  background-color: white;
-}
-
-.studio-about .about,
-.contact-where .address {
+.about,
+.address {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.studio-about .studio-img-box {
+.about .studio-img-box {
   margin-top: 4.8rem;
   overflow: hidden;
 }
@@ -758,7 +737,7 @@ body:not(.sticky) .header {
   color: var(--pink-dark-text);
 }
 
-.contact-where .map {
+.map {
   margin-top: 4.8rem;
 }
 
@@ -773,10 +752,6 @@ body:not(.sticky) .header {
   object-fit: cover;
   display: block;
   transition: all 0.4s;
-}
-
-.contact-how .heading-secondary {
-  justify-self: center;
 }
 
 .contact-how .heading-tertiary {
