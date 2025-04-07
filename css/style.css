@@ -496,6 +496,11 @@ body:not(.sticky) .header {
   background-attachment: fixed;
 }
 
+.section-first {
+  padding-top: 4.8rem;
+  background-color: white;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -632,7 +637,7 @@ body:not(.sticky) .header {
   color: var(--text-color);
   font-size: 1.4rem;
   width: 98px;
-  font-weight: bold;
+  font-weight: 500;
   bottom: 0;
   left: -25px;
   right: -25px;
@@ -744,13 +749,13 @@ body:not(.sticky) .header {
 
 .description-link:link,
 .description-link:visited {
-  color: var(--pink-medium);
+  color: var(--pink-medium-darker);
   transition: all 0.3s;
 }
 
 .description-link:hover,
 .description-link:active {
-  color: var(--pink-light);
+  color: var(--pink-dark-text);
 }
 
 .contact-where .map {

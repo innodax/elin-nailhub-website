@@ -5,7 +5,6 @@ Sizing system
 - Font weights
 Default: 400
 Medium: 500
-Semi-bold: 600
 Bold: 700
 
 - Line heights
@@ -97,7 +96,7 @@ p {
 .heading-primary,
 .heading-secondary {
   font-family: "Gwendolyn", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--pink-dark-text);
 }
 
@@ -159,11 +158,11 @@ p {
 .btn--full:link,
 .btn--full:visited {
   color: white;
-  background-color: var(--pink-medium);
+  background-color: var(--pink-medium-darker);
 }
 
 .btn--full::before {
-  background: var(--pink-medium-darker);
+  background: var(--pink-dark-text);
 }
 
 .btn--empty:link,
