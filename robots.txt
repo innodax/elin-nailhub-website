@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/favicon/
+Disallow: /manifest.webmanifest
+Allow: /
+
+Sitemap: https://nailhub.cz/sitemap.xml
