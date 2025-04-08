@@ -269,7 +269,7 @@ body:not(.sticky) .header {
 }
 
 .section-studio .flip-card-front {
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 }
 
 .studio-description,
@@ -526,16 +526,15 @@ body:not(.sticky) .header {
   transform: rotate(-1deg);
 }
 
-/* TODO */
 .sticky-note.left::before,
 .sticky-note.right::before {
   content: " ";
   display: block;
   position: absolute;
-  left: 40%;
-  top: -15px;
-  width: 100px;
-  height: 25px;
+  left: 35%;
+  top: -1.5rem;
+  width: 10rem;
+  height: 2.5rem;
   z-index: 2;
   background-color: rgba(243, 245, 228, 0.5);
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -618,14 +617,13 @@ body:not(.sticky) .header {
   z-index: 1;
 }
 
-/* TODO */
 .service-icon-container span {
   position: absolute;
   background: white;
   color: var(--text-color);
   font-size: 1.4rem;
-  width: 98px;
-  font-weight: 500;
+  width: 10rem;
+  font-weight: 700;
   bottom: 0;
   left: -25px;
   right: -25px;
@@ -639,7 +637,6 @@ body:not(.sticky) .header {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* TODO */
 .service-icon-container span:before {
   content: "";
   border-left: 5px solid transparent;
@@ -650,32 +647,29 @@ body:not(.sticky) .header {
   left: 40px;
 }
 
-/* TODO */
 .service-icon-container:hover span {
   bottom: 50px;
   visibility: visible;
   opacity: 1;
 }
 
-/* TODO */
 .service-price {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   align-self: flex-end;
-  height: 35px;
+  height: 3.5rem;
   margin-top: 2.4rem;
-  padding: 0 16px;
-  font-size: 24px;
+  padding: 0 1.6rem;
+  font-size: 2.4rem;
   color: white;
   font-weight: bold;
   letter-spacing: var(--letter-spacing);
-  margin-right: 24px;
+  margin-right: 2.4rem;
   position: relative;
   z-index: 1;
 }
 
-/* TODO */
 .service-price::before {
   content: " ";
   display: block;
@@ -683,7 +677,7 @@ body:not(.sticky) .header {
   left: 0;
   top: 0;
   width: 100%;
-  height: 35px;
+  height: 3.5rem;
   z-index: -1;
   background-color: var(--pink-light);
 }
@@ -800,11 +794,8 @@ body:not(.sticky) .header {
 /*****************************************************/
 /* TERMS */
 /*****************************************************/
-.terms {
-  padding-bottom: 12.8rem;
-}
 
-.terms .heading-secondary {
+.heading-secondary--footer {
   font-family: "Tinos Static", serif;
   font-size: 3rem;
   font-weight: bold;
@@ -814,7 +805,7 @@ body:not(.sticky) .header {
   color: var(--pink-dark-text);
 }
 
-.terms .heading-tertiary {
+.heading-tertiary--footer {
   font-family: "Tinos Static", serif;
   font-size: 2.4rem;
   letter-spacing: var(--letter-spacing);
@@ -823,30 +814,19 @@ body:not(.sticky) .header {
   color: var(--pink-dark-text);
 }
 
-.terms ul {
+.ul--footer {
   margin: 0 0 2.4rem 3.6rem;
   font-size: 1.8rem;
   line-height: 1.8;
 }
 
-.terms a:link,
-.terms a:visited {
-  color: var(--grey);
-  transition: all 0.3s;
-}
-
-.terms a:hover,
-.terms a:active {
-  color: var(--text-color);
-}
-
 /*****************************************************/
 /* FAQ */
 /*****************************************************/
+
 .faq-question {
   font-family: "Tinos Static", serif;
   font-size: 2.4rem;
-  font-weight: 500;
   letter-spacing: var(--letter-spacing);
   text-align: left;
   width: 100%;
@@ -883,7 +863,7 @@ body:not(.sticky) .header {
 }
 
 .faq-answer.displayed {
-  max-height: 500px;
+  max-height: 50rem;
   padding: 1.2rem 1.6rem;
 }
 
