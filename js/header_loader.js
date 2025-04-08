@@ -22,24 +22,35 @@ document.addEventListener("DOMContentLoaded", function () {
       // sticky header
       const sectionHeroEl = document.querySelector(".section-hero-wrapper");
 
-      const obs = new IntersectionObserver(
-        function (entries) {
-          const ent = entries[0];
-          console.log(ent);
-          if (!ent.isIntersecting) {
-            document.body.classList.add("sticky");
+      if (sectionHeroEl) {
+        const obs = new IntersectionObserver(
+          function (entries) {
+            const ent = entries[0];
+            console.log(ent);
+            if (!ent.isIntersecting) {
+              document.body.classList.add("sticky");
+            }
+            if (ent.isIntersecting) {
+              document.body.classList.remove("sticky");
+            }
+          },
+          {
+            root: null,
+            threshold: 0,
+            rootMargin: "-80px",
           }
-          if (ent.isIntersecting) {
+        );
+        obs.observe(sectionHeroEl);
+      } else {
+        window.addEventListener("scroll", function () {
+          const offset = 80;
+          if (window.scrollY > window.innerHeight - offset) {
+            document.body.classList.add("sticky");
+          } else {
             document.body.classList.remove("sticky");
           }
-        },
-        {
-          root: null,
-          threshold: 0,
-          rootMargin: "-80px",
-        }
-      );
-      obs.observe(sectionHeroEl);
+        });
+      }
     })
 
     .catch((error) => {
