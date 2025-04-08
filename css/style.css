@@ -839,3 +839,60 @@ body:not(.sticky) .header {
 .terms a:active {
   color: var(--text-color);
 }
+
+/*****************************************************/
+/* FAQ */
+/*****************************************************/
+.faq-question {
+  font-family: "Tinos Static", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing);
+  text-align: left;
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  color: var(--pink-dark-text);
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-question:hover,
+.faq-question:active,
+.faq-question.active {
+  background-color: var(--pink-light);
+}
+
+.displayed {
+  display: block;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.6rem;
+  background-color: #fcfcfc;
+  border-left: 3px solid var(--pink-light);
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: all 0.4s;
+}
+
+.faq-answer.displayed {
+  max-height: 500px;
+  padding: 1.2rem 1.6rem;
+}
+
+.faq-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.faq-question.active .faq-icon {
+  transform: rotate(90deg);
+}
