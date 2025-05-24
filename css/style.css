@@ -876,3 +876,42 @@ body:not(.sticky) .header {
 .faq-question.active .faq-icon {
   transform: rotate(90deg);
 }
+
+.training {
+  margin-bottom: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 2, 4rem;
+}
+
+.training__year {
+  display: flex;
+  justify-self: left;
+  font-family: "Tinos Static", serif;
+  font-size: 4rem;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: var(--pink-dark-text);
+  font-weight: bold;
+}
+
+.training__list {
+}
+
+.training__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.training__name {
+  font-family: "Tinos Static", serif;
+  font-size: 2em;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: var(--pink-dark-text);
+  font-weight: bold;
+}
+
+.training__lecturer {
+  margin-bottom: 1.6rem;
+}
