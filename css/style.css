@@ -30,7 +30,7 @@
 }
 
 .logo {
-  height: 2.6em;
+  height: 4.6em;
   display: block;
   object-fit: contain;
 }
@@ -420,7 +420,7 @@ body:not(.sticky) .header {
 
 .footer-logo {
   display: block;
-  max-height: 2.6em;
+  max-height: 4.6em;
   margin-bottom: 3.2rem;
 }
 
