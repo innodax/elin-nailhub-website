@@ -1,0 +1,145 @@
+/*****************************************************/
+/* GENERAL COMPONENTS */
+/*****************************************************/
+
+p {
+  font-family: $font-paragraph;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  margin-bottom: 5px;
+}
+
+/*****************************************************/
+/* HEADINGS */
+/*****************************************************/
+
+.heading {
+  &--primary,
+  &--secondary {
+    font-family: $font-heading;
+    font-weight: $font-weight-base;
+    color: $color-text-pink-dark;
+  }
+
+  &--primary {
+    font-size: 9.8em;
+  }
+
+  &--secondary {
+    font-size: 4.8rem;
+
+    &-footer {
+      font-family: $font-subheading;
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: $letter-spacing-large;
+      text-transform: uppercase;
+      margin: 3.2rem 0 1.6rem 0;
+      color: $color-text-pink-dark;
+    }
+  }
+
+  &--tertiary {
+    font-family: $font-subheading;
+    font-size: 2rem;
+    letter-spacing: $letter-spacing-large;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: $color-text-pink-dark;
+  }
+}
+
+/*****************************************************/
+/* UL */
+/*****************************************************/
+
+.ul--footer {
+  margin: 0 0 2.4rem 3.6rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/*****************************************************/
+/* LINK */
+/*****************************************************/
+
+.link--default {
+  &:active,
+  &:link {
+    color: $color-pink-dark;
+    transition: all 0.3s;
+
+    &:hover,
+    &:visited {
+      color: $color-text-pink-dark;
+    }
+  }
+}
+
+/*****************************************************/
+/* BUTTONS */
+/*****************************************************/
+
+.btn:link,
+.btn:visited {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-large;
+  font-family: $font-subheading;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  line-height: 1;
+  align-self: center;
+  border-radius: $border-radius-btn;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.4s ease-out;
+  z-index: -1;
+}
+
+.btn:hover::before,
+.btn:active::before {
+  width: 100%;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: #ffffff;
+  background-color: $color-pink-dark;
+}
+
+.btn--full::before {
+  background: $color-text-pink-dark;
+}
+
+.btn--empty:link,
+.btn--empty:visited {
+  color: $color-text-pink-dark;
+  background-color: #ffffff;
+}
+
+.btn--empty::before {
+  background: $color-bg-pink;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: $color-text-primary;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 3px $color-violet-light;
+}
+
+.btn--outline::before {
+  background: $color-violet-light;
+}

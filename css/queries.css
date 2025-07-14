@@ -3,11 +3,11 @@
 /*****************************************************/
 
 @media (max-width: 84em) {
-  .hero {
+  .hero__container {
     max-width: 120rem;
   }
 
-  .heading-primary {
+  .heading--primary {
     font-size: 8.6rem;
   }
 }
@@ -21,7 +21,7 @@
     font-size: 56.25%;
   }
 
-  .hero {
+  .hero__container {
     gap: 4.8rem;
   }
 }
@@ -31,30 +31,30 @@
 /*****************************************************/
 
 @media (max-width: 59em) {
-  .hero {
+  .hero__container {
     grid-template-columns: 1fr;
     padding: 0rem 8rem;
     gap: 8rem;
   }
 
-  .services-grid {
+  .services__grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-text-box,
-  .hero-img-box {
+  .hero__description-wrapper,
+  .hero__img-wrapper {
     text-align: center;
   }
 
-  .hero-img {
-    width: 50%;
+  .hero__img {
+    max-width: 40%;
   }
 
   .container {
     padding: 0 8rem;
   }
 
-  .header-nav {
+  .header__nav {
     position: absolute;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@
     visibility: hidden;
   }
 
-  .nav-open .header-nav {
+  .nav-open .header__nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -80,34 +80,34 @@
     margin: 0;
   }
 
-  .btn-mobile-nav {
+  .header__btn-mobile-nav {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
+  .nav-open .header__icon-mobile-nav[name="close-outline"] {
     display: block;
   }
 
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
+  .nav-open .header__icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
 
-  .header-nav-list {
+  .header__nav-list {
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
   }
 
-  .header-nav-link:link,
-  .header-nav-link:visited {
+  .header__nav-link:link,
+  .header__nav-link:visited {
     font-size: 3rem;
   }
 
-  .header-nav-link::after {
+  .header__nav-link::after {
     display: none;
   }
 
-  .header-btn {
+  .header__nav-item--cta {
     display: block;
     margin: 0;
   }
@@ -126,29 +126,19 @@
     gap: 6rem;
   }
 
-  .studio-description,
-  .contact-description {
+  .index__section-description {
     padding-left: 8rem;
   }
 
-  .circle-img-box::before,
-  .flip-card-back {
-    display: none;
-  }
-
-  .flip-card:hover .flip-card-inner {
-    transform: none;
-  }
-
-  .services-img-grid {
+  .index__services-img-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .footer-grid {
+  .footer__grid {
     gap: 3.2rem;
   }
 
-  .training {
+  .about__trainings-training {
     grid-template-columns: 1fr 4fr;
   }
 }
@@ -158,31 +148,32 @@
 /*****************************************************/
 
 @media (max-width: 44rem) {
-  .section-booking {
+  .index__cta {
     text-align: center;
   }
 
-  .booking-text-box {
+  .index__cta-text-box {
     padding: 4rem 4rem 4.8em 4rem;
   }
 
-  .social-col {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .footer-grid {
+  .footer__grid {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 9.6rem;
   }
 
-  .nav-col {
+  .footer__column--social {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .footer__column--nav {
     grid-row: 1;
   }
 
-  .info-col {
+  .footer__column--info {
     grid-column: -1 / 1;
     justify-items: center;
+    text-align: center;
   }
 }
 
@@ -207,22 +198,16 @@
     grid-template-columns: 1fr;
   }
 
-  .services-grid {
+  .services__grid {
     grid-template-columns: 1fr;
     padding: 3.2rem 3.2rem;
-  }
-
-  .flip-card-front {
-    position: relative;
   }
 
   .container {
     padding: 0 2.4rem;
   }
 
-  .section.section-hero,
-  .section.studio-about,
-  .section.contact-where {
+  .index__section {
     padding: 0 0 8rem 0;
   }
 
@@ -231,46 +216,41 @@
     padding: 2.4rem 1.8rem;
   }
 
-  .hero {
-    padding: 8rem 6rem;
+  .hero__container {
+    padding: 0rem 6rem;
   }
 
-  .heading-primary {
+  .heading--primary {
     font-size: 6.2rem;
   }
 
-  .heading-secondary {
+  .heading--secondary {
     text-align: center;
   }
 
-  .hero-img-box {
-    display: none;
-  }
-
-  .studio-description,
-  .contact-description {
+  .index__section-description {
     padding: 0;
     border: none;
     text-align: center;
   }
 
-  .services-img-grid {
+  .index__services-img-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .booking-grid {
+  .index__cta-grid {
     grid-template-columns: 1fr;
   }
 
-  .booking-img-box {
+  .index__cta-img-box {
     display: none;
   }
 
-  .footer-grid {
+  .footer__grid {
     gap: 3rem;
   }
 
-  .training {
+  .about__trainings {
     grid-template-columns: 1fr 3fr;
   }
 
@@ -294,7 +274,7 @@
 /*****************************************************/
 
 @media (max-width: 24rem) {
-  .hero {
-    padding: 6rem 4rem;
+  .hero__container {
+    padding: 0rem 2rem;
   }
 }

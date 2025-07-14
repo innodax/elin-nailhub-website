@@ -1,0 +1,56 @@
+/*****************************************************/
+/* COLORS */
+/*****************************************************/
+
+$color-pink-lightest: #ffebf0;
+$color-pink-light: #ffbbd7;
+$color-pink-medium: #906f8d;
+$color-pink-dark: #7c5f79;
+
+$color-text-primary: #151014;
+$color-text-muted: #888;
+$color-text-pink-dark: #523f50;
+
+$color-bg-white: #ffffff;
+$color-bg-pink: #ffe8f5;
+
+$color-violet-light: #f8dfff;
+
+/*****************************************************/
+/* FONTS */
+/*****************************************************/
+
+$font-paragraph: "Nunito", sans-serif;
+$font-subheading: "Tinos Static", serif;
+$font-heading: "Gwendolyn", sans-serif;
+$font-weight-base: 400;
+$line-height-base: 1.8;
+$font-size-sm: 1.6rem;
+$font-size-base: 1.8rem;
+$font-size-md: 2.4rem;
+
+/*****************************************************/
+/* SPACING */
+/*****************************************************/
+
+$spacing-xs: 0.4rem;
+$spacing-sm: 0.8rem;
+$spacing-md: 1.6rem;
+$spacing-lg: 3.2rem;
+$spacing-xl: 4.8rem;
+
+/*****************************************************/
+/* BREAKPOINTS */
+/*****************************************************/
+
+$breakpoint-sm: 36em; // 576px
+$breakpoint-md: 48em; // 768px
+$breakpoint-lg: 62em; // 992px
+$breakpoint-xl: 75em; // 1200px
+
+/*****************************************************/
+/* OTHER */
+/*****************************************************/
+
+$border-radius-btn: 15px;
+$letter-spacing-large: 2.5px;

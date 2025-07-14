@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       const footerContainer = document.getElementById("footer-container");
       footerContainer.innerHTML = data;
-      document.querySelector(".footer").classList.add("loaded");
 
-      const yearEl = document.querySelector(".year");
+      const yearEl = document.querySelector(".footer__year");
       if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
       }
     })
+
     .catch((error) => {
       console.error("Error while retrieving footer:", error);
     });

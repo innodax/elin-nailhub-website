@@ -19,7 +19,7 @@
       property="og:description"
       content="Profesionální nehtové studio v Brně. Precizní manikúra, originální styly a relax v útulném prostředí."
     />
-    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta property="og:image" content="https://nailhub.cz/img/hero.png" />
     <meta property="og:url" content="https://nailhub.cz/" />
 
     <!-- Twitter Card -->
@@ -29,7 +29,7 @@
       name="twitter:description"
       content="Precizní manikúra, originální styly a relaxační péče. Vítej v Elin Nailhub."
     />
-    <meta name="twitter:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta name="twitter:image" content="https://nailhub.cz/img/hero.png" />
 
     <link rel="canonical" href="https://nailhub.cz/" />
 
@@ -45,14 +45,7 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
 
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
@@ -63,7 +56,7 @@
         "@context": "https://schema.org",
         "@type": "BeautySalon",
         "name": "Elin Nailhub",
-        "image": "https://nailhub.cz/img/kolaz10.png",
+        "image": "https://nailhub.cz/img/hero.png",
         "description": "Profesionální nehtové studio v Brně. Precizní manikúra, moderní i klasické styly, relaxační služby.",
         "address": {
           "@type": "PostalAddress",
@@ -84,14 +77,14 @@
     <header id="header-container"></header>
 
     <!-- hero -->
-    <div class="section-hero-wrapper">
-      <section class="section section-hero">
-        <div class="hero grid grid--2-cols">
-          <div class="hero-text-box">
-            <h1 class="heading-primary margin-bottom-md">
+    <div class="hero">
+      <section class="section hero__bg">
+        <div class="hero__container grid grid--2-cols">
+          <div class="hero__description-wrapper">
+            <h1 class="heading--primary margin-bottom-md">
               Kouzelná manikúra v&nbsp;centru Brna
             </h1>
-            <p class="hero-description">
+            <p class="hero__description">
               Ať už toužíš po přirozených nehtech, eleganci, nebo chceš zazářit
               s odvážnou barvou či zdobením, postarám se o Tvé ruce s maximální
               péčí a precizností.
@@ -101,13 +94,13 @@
             >
             <a href="sluzby" class="btn btn--empty">Ceník</a>
           </div>
-          <div class="hero-img-box">
+          <div class="hero__img-wrapper">
             <picture>
               <source srcset="img/hero.webp" type="image/webp" />
               <source srcset="img/hero.png" type="image/png" />
               <img
                 src="img/hero.png"
-                class="hero-img"
+                class="hero__img"
                 alt="Obrázek ve tvaru luny s ženou, která má třpytivě nalakované nehty"
               />
             </picture>
@@ -116,207 +109,219 @@
       </section>
     </div>
 
-    <!-- sections studio -->
-    <section class="section section-studio">
-      <div class="container">
-        <h2 class="heading-secondary margin-bottom-md">
-          Buď  sama sebou stylově
-        </h2>
-        <div class="grid grid--2-cols--1-3">
-          <div class="circle-img-box flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <picture>
-                  <source srcset="img/monika.webp" type="image/webp" />
-                  <source srcset="img/monika.png" type="image/png" />
-                  <img
-                    class="circle-img"
-                    src="img/monika.png"
-                    alt="Monika Kramářová, profilový obrázek"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div class="flip-card-back">
-                <p class="description">manikérka</p>
-                <p class="name">Monika Kramářová</p>
-              </div>
-            </div>
-          </div>
-          <div class="studio-description">
-            <p>
-              Kvalitní manikúra podporuje zdraví a krásu nehtů. Zdravé a krásné
-              nehty vyzdvihnou ženskost a přirozené sebevědomí každé ženy.
-            </p>
-            <p>
-              V Elin Nailhub dochází ke sjednocení relaxu, sebelásky,
-              originality a přátelství. Staň se součástí tohoto magického
-              momentu.
-            </p>
-            <p>♡ ♡ ♡ Budu se těšit.  ♡ ♡ ♡</p>
-            <a href="o-mne" class="btn btn--outline">Více o mně</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- sections services -->
-    <section class="section section-services">
-      <div class="services-container">
-        <h2 class="heading-secondary margin-bottom-md">
-          Moderní i klasické styly
-        </h2>
-        <p class="services-description">
-          Široká škála stylů, technik a zdobení.
-        </p>
-        <div class="services-img-grid">
-          <div class="services-item">
-            <picture>
-              <source srcset="img/nehty1.webp" type="image/webp" />
-              <source srcset="img/nehty1.jpg" type="image/jpeg" />
-              <img
-                class="services-img"
-                src="img/nehty1.jpg"
-                alt="Nehty s růžovým lakem a zdobením ve tvaru zmrzliny"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="services-item">
-            <picture>
-              <source srcset="img/nehty2.webp" type="image/webp" />
-              <source srcset="img/nehty2.jpg" type="image/jpeg" />
-              <img
-                class="services-img"
-                src="img/nehty2.jpg"
-                alt="Nehty s žlutým a růžovým lakem a francouzskou manikúrou na dvou nehtech"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="services-item">
-            <picture>
-              <source srcset="img/nehty3.webp" type="image/webp" />
-              <source srcset="img/nehty3.jpg" type="image/jpeg" />
-              <img
-                class="services-img"
-                src="img/nehty3.jpg"
-                alt="Nehty se zlatým mramorovým zdobením"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="services-item">
-            <picture>
-              <source srcset="img/nehty4.webp" type="image/webp" />
-              <source srcset="img/nehty4.jpg" type="image/jpeg" />
-              <img
-                class="services-img"
-                src="img/nehty4.jpg"
-                alt="Nehty s bílým lakem a modrou francouzskou manikúrou, zdobení s kytičkou"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="services-item">
-            <picture>
-              <source srcset="img/nehty5.webp" type="image/webp" />
-              <source srcset="img/nehty5.jpg" type="image/jpeg" />
-              <img
-                class="services-img"
-                src="img/nehty5.jpg"
-                alt="Nehty s červeným a krémovým lakem a zdobením ve tvaru větvičky"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-          <div class="services-item">
-            <picture>
-              <source srcset="img/nehty6.webp" type="image/webp" />
-              <source srcset="img/nehty6.jpg" type="image/jpeg" />
-              <img
-                class="services-img"
-                src="img/nehty6.jpg"
-                alt="Nehty s přirozeně vypadajícím lakem"
-                loading="lazy"
-              />
-            </picture>
-          </div>
-        </div>
-        <a href="sluzby" class="btn btn--full">Nabídka služeb</a>
-      </div>
-    </section>
-
-    <!-- sections contact -->
-    <section class="section section-contact">
-      <div class="container">
-        <h2 class="heading-secondary margin-bottom-md">
-          Najdeš mě v centru Brna
-        </h2>
-        <div class="grid grid--2-cols--1-3">
-          <div class="circle-img-box flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <picture>
-                  <source srcset="img/mapa.webp" type="image/webp" />
-                  <source srcset="img/mapa.png" type="image/png" />
-                  <img
-                    class="circle-img"
-                    src="img/mapa.png"
-                    alt="Mapa, kde se nachází studio"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div class="flip-card-back">
-                <p class="description">studio</p>
-                <p class="name">Elin<br />Nailhub</p>
+    <div class="index">
+      <!-- section studio -->
+      <section class="section index__studio">
+        <div class="container">
+          <h2 class="heading--secondary margin-bottom-md">
+            Buď  sama sebou stylově
+          </h2>
+          <div class="grid grid--2-cols--1-3">
+            <div class="index__section-flip-card index__section-circle-img-box">
+              <div class="index__section-flip-card-inner">
+                <div class="index__section-flip-card-front">
+                  <picture>
+                    <source srcset="img/monika.webp" type="image/webp" />
+                    <source srcset="img/monika.png" type="image/png" />
+                    <img
+                      class="index__section-circle-img"
+                      src="img/monika.png"
+                      alt="Monika Kramářová, profilový obrázek"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="index__section-flip-card-back">
+                  <p class="index__section-flip-card-description">manikérka</p>
+                  <p class="index__section-flip-card-name">Monika Kramářová</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="contact-description">
-            <p>
-              Můj útulný manikúrní koutek nalezneš
-              <strong
-                >v prostorech Salonu Marylin na Šilingrově náměstí 257/3</strong
-              >.
-            </p>
-            <p>
-              Dostaneš se sem pohodlně pěšky, MHD nebo i autem (Domini Park cca
-              300 metrů od salonu).
-            </p>
-            <p>Napiš mi, jakmile dorazíš, a já ti přijdu otevřít. ♡ ♡ ♡</p>
-            <a href="kontakt" class="btn btn--outline">Kontakt</a>
+            <div class="index__section-description">
+              <p>
+                Kvalitní manikúra podporuje zdraví a krásu nehtů. Zdravé a
+                krásné nehty vyzdvihnou ženskost a přirozené sebevědomí každé
+                ženy.
+              </p>
+              <p>
+                V Elin Nailhub dochází ke sjednocení relaxu, sebelásky,
+                originality a přátelství. Staň se součástí tohoto magického
+                momentu.
+              </p>
+              <p>♡ ♡ ♡ Budu se těšit.  ♡ ♡ ♡</p>
+              <a href="o-mne" class="btn btn--outline margin-top-md"
+                >Více o mně</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- sections cta -->
-    <section class="section-booking">
-      <div class="container">
-        <div class="booking-grid">
-          <div class="booking-text-box">
-            <h2 class="heading-secondary margin-bottom-md">
-              Kouzlo chvilky pro sebe
-            </h2>
-            <p class="booking-description">
-              Zastav se v téhle uspěchané době a dopřej si pravidelnou dávku
-              dopaminu zdravou cestou. Co jiného dodá ženě pocit štěstí než
-              krásná manikúra? Vždyť ruce máme stále na očích :)
-            </p>
-            <a href="rezervace" class="btn btn--empty"
-              >Klikni pro rezervaci termínu</a
-            >
+      <!-- section services -->
+      <section class="section index__services">
+        <div class="index__services-container">
+          <h2 class="heading--secondary margin-bottom-md">
+            Moderní i klasické styly
+          </h2>
+          <p class="index__services-description">
+            Široká škála stylů, technik a zdobení.
+          </p>
+          <div class="index__services-img-grid">
+            <div class="index__services-item">
+              <picture>
+                <source srcset="img/nehty1.webp" type="image/webp" />
+                <source srcset="img/nehty1.jpg" type="image/jpeg" />
+                <img
+                  class="index__services-img"
+                  src="img/nehty1.jpg"
+                  alt="Nehty s růžovým lakem a zdobením ve tvaru zmrzliny"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="index__services-item">
+              <picture>
+                <source srcset="img/nehty2.webp" type="image/webp" />
+                <source srcset="img/nehty2.jpg" type="image/jpeg" />
+                <img
+                  class="index__services-img"
+                  src="img/nehty2.jpg"
+                  alt="Nehty s žlutým a růžovým lakem a francouzskou manikúrou na dvou nehtech"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="index__services-item">
+              <picture>
+                <source srcset="img/nehty3.webp" type="image/webp" />
+                <source srcset="img/nehty3.jpg" type="image/jpeg" />
+                <img
+                  class="index__services-img"
+                  src="img/nehty3.jpg"
+                  alt="Nehty se zlatým mramorovým zdobením"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="index__services-item">
+              <picture>
+                <source srcset="img/nehty4.webp" type="image/webp" />
+                <source srcset="img/nehty4.jpg" type="image/jpeg" />
+                <img
+                  class="index__services-img"
+                  src="img/nehty4.jpg"
+                  alt="Nehty s bílým lakem a modrou francouzskou manikúrou, zdobení s kytičkou"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="index__services-item">
+              <picture>
+                <source srcset="img/nehty5.webp" type="image/webp" />
+                <source srcset="img/nehty5.jpg" type="image/jpeg" />
+                <img
+                  class="index__services-img"
+                  src="img/nehty5.jpg"
+                  alt="Nehty s červeným a krémovým lakem a zdobením ve tvaru větvičky"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="index__services-item">
+              <picture>
+                <source srcset="img/nehty6.webp" type="image/webp" />
+                <source srcset="img/nehty6.jpg" type="image/jpeg" />
+                <img
+                  class="index__services-img"
+                  src="img/nehty6.jpg"
+                  alt="Nehty s přirozeně vypadajícím lakem"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           </div>
-          <div
-            class="booking-img-box"
-            role="img"
-            aria-label="Žena s gelovými nehty držící hrnek"
-          ></div>
+          <a href="sluzby" class="btn btn--full index__services-btn"
+            >Nabídka služeb</a
+          >
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- section contact -->
+      <section class="section index__contact">
+        <div class="container">
+          <h2 class="heading--secondary margin-bottom-md">
+            Najdeš mě v centru Brna
+          </h2>
+
+          <div class="grid grid--2-cols--1-3">
+            <div class="index__section-flip-card index__section-circle-img-box">
+              <div class="index__section-flip-card-inner">
+                <div class="index__section-flip-card-front">
+                  <picture>
+                    <source srcset="img/mapa.webp" type="image/webp" />
+                    <source srcset="img/mapa.png" type="image/png" />
+                    <img
+                      class="index__section-circle-img"
+                      src="img/mapa.png"
+                      alt="Mapa, kde se nachází studio"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="index__section-flip-card-back">
+                  <p class="index__section-flip-card-description">studio</p>
+                  <p class="index__section-flip-card-name">Elin<br />Nailhub</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="index__section-description">
+              <p>
+                Můj útulný manikúrní koutek nalezneš
+                <strong
+                  >v prostorech Salonu Marylin na Šilingrově náměstí
+                  257/3</strong
+                >.
+              </p>
+              <p>
+                Dostaneš se sem pohodlně pěšky, MHD nebo i autem (Domini Park
+                cca 300 metrů od salonu).
+              </p>
+              <p>Napiš mi, jakmile dorazíš, a já ti přijdu otevřít. ♡ ♡ ♡</p>
+              <a href="kontakt" class="btn btn--outline margin-top-md"
+                >Kontakt</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section cta -->
+      <section class="index__cta">
+        <div class="container">
+          <div class="index__cta-grid">
+            <div class="index__cta-text-box">
+              <h2 class="index__cta-h2 heading--secondary margin-bottom-md">
+                Kouzlo chvilky pro sebe
+              </h2>
+              <p class="index__cta-description">
+                Zastav se v téhle uspěchané době a dopřej si pravidelnou dávku
+                dopaminu zdravou cestou. Co jiného dodá ženě pocit štěstí než
+                krásná manikúra? Vždyť ruce máme stále na očích :)
+              </p>
+              <a href="rezervace" class="btn btn--empty"
+                >Klikni pro rezervaci termínu</a
+              >
+            </div>
+            <div
+              class="index__cta-img-box"
+              role="img"
+              aria-label="Žena s gelovými nehty držící hrnek"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer id="footer-container"></footer>

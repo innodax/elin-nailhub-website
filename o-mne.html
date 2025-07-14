@@ -20,10 +20,16 @@
       content="Profesní profil zakladatelky studia Elin Nailhub. Odborná praxe a individuální přístup."
     />
     <meta property="og:url" content="https://nailhub.cz/o-mne.html" />
+    <meta property="og:image" content="https://nailhub.cz/img/monika.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="O mně – Elin Nailhub Brno" />
     <meta
-      property="og:image"
-      content="https://nailhub.cz/img/photo-1512207046665-7592bb0ce5e6.png"
+      name="twitter:description"
+      content="Profesní profil zakladatelky studia Elin Nailhub. Odborná praxe a individuální přístup."
     />
+    <meta name="twitter:image" content="https://nailhub.cz/img/monika.png" />
 
     <link rel="canonical" href="https://nailhub.cz/o-mne" />
 
@@ -33,12 +39,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
@@ -68,111 +69,121 @@
     <!-- header -->
     <header id="header-container"></header>
 
-    <!-- page sections -->
-    <section class="section section--first">
-      <div class="container about">
-        <h1 class="heading-primary text-center">O mně</h1>
-        <h2 class="heading-secondary margin-bottom-sm">Vzdělání</h2>
-        <p class="margin-bottom-md">
-          Na střední škole jsem vystudovala
-          <strong>obor kosmetička</strong> zakončený maturitní zkouškou, kterou
-          jsem úspěšně složila. Právě tady jsem prvně přičichla k řemeslu
-          manikérky. Bohužel mi tehdejší techniky a školení vůbec nesedly. Nehty
-          byly tlusté, nedržely a já ani neměla žádné známé, na kterých bych
-          mohla trénovat. Takže jsem od nehtů ustoupila, ale opakovaně mě lákalo
-          se nehtům věnovat.
-        </p>
-        <h2 class="heading-secondary margin-bottom-sm">Praxe</h2>
-        <p class="margin-bottom-md">
-          Nakonec jsem tomu dala ještě jednu šanci a objevila
-          <strong>Studio Adele</strong>. Absolvovala jsem u Adele kurz a dokonce
-          dostala i <strong>nabídku práce</strong>. Ve studiu jsem se mnohému
-          naučila a jsem Adele i holkám ze studia moc vděčná za jejich
-          trpělivost a péči, kterou mi během mé praxe věnovaly. ♡
-        </p>
-        <h2 class="heading-secondary margin-bottom-sm">Elin Nailhub</h2>
-        <p>
-          Po pár letech nadešel čas se <strong>pracovně osamostatnit</strong> a
-          já jen s úsměvem čekám, co mi tahle nová cesta přinese.
-        </p>
-        <p>Držte mi palce ♡ ♡ ♡</p>
-        <p class="text-center margin-top-med">
-          Zajímá Tě, jaké služby nabízím?
-          <a class="description-link" href="/sluzby"
-            >Přejdi na přehled služeb</a
-          >
-          nebo
-          <a class="description-link" href="/rezervace">se rovnou objednej.</a>
-        </p>
-        <div class="studio-img-box">
-          <img
-            class="studio-img"
-            src="img/polishes.jpg"
-            alt="Lak na nehty s obrázkem jednorožce"
-            loading="lazy"
-          />
+    <div class="about">
+      <!-- section education -->
+      <section class="section section--first about__education">
+        <div class="container">
+          <h1 class="heading--primary text-center">O mně</h1>
+          <h2 class="heading--secondary margin-bottom-sm">Vzdělání</h2>
+          <p class="margin-bottom-md">
+            Na střední škole jsem vystudovala
+            <strong>obor kosmetička</strong> zakončený maturitní zkouškou,
+            kterou jsem úspěšně složila. Právě tady jsem prvně přičichla k
+            řemeslu manikérky. Bohužel mi tehdejší techniky a školení vůbec
+            nesedly. Nehty byly tlusté, nedržely a já ani neměla žádné známé, na
+            kterých bych mohla trénovat. Takže jsem od nehtů ustoupila, ale
+            opakovaně mě lákalo se nehtům věnovat.
+          </p>
+          <h2 class="heading--secondary margin-bottom-sm">Praxe</h2>
+          <p class="margin-bottom-md">
+            Nakonec jsem tomu dala ještě jednu šanci a objevila
+            <strong>Studio Adele</strong>. Absolvovala jsem u Adele kurz a
+            dokonce dostala i <strong>nabídku práce</strong>. Ve studiu jsem se
+            mnohému naučila a jsem Adele i holkám ze studia moc vděčná za jejich
+            trpělivost a péči, kterou mi během mé praxe věnovaly. ♡
+          </p>
+          <h2 class="heading--secondary margin-bottom-sm">Elin Nailhub</h2>
+          <p>
+            Po pár letech nadešel čas se
+            <strong>pracovně osamostatnit</strong> a já jen s úsměvem čekám, co
+            mi tahle nová cesta přinese.
+          </p>
+          <p>Držte mi palce ♡ ♡ ♡</p>
+          <p class="text-center margin-top-md">
+            Zajímá Tě, jaké služby nabízím?
+            <a class="link--default" href="/sluzby">Přejdi na přehled služeb</a>
+            nebo
+            <a class="link--default" href="/rezervace">se rovnou objednej.</a>
+          </p>
+          <div class="about__education-img-box">
+            <img
+              class="about__education-img"
+              src="img/polishes.jpg"
+              alt="Lak na nehty s obrázkem jednorožce"
+              loading="lazy"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section studio-cert">
-      <div class="container">
-        <h2 class="heading-secondary margin-bottom-md">Absolvovaná školení</h2>
-        <p class="margin-bottom-md">
-          Manikérské řemeslo se neustále vyvíjí, a proto je důležité se neustále
-          vzdělávat. Jedině tak se dá dosáhnout skutečně kvalitních služeb,
-          které jdou ruku v ruce spolu s trendy a péčí o zdraví.
-        </p>
+      <!-- section trainings -->
+      <section class="section about__trainings">
+        <div class="container">
+          <h2 class="heading--secondary margin-bottom-md">
+            Absolvovaná školení
+          </h2>
+          <p class="margin-bottom-md">
+            Manikérské řemeslo se neustále vyvíjí, a proto je důležité se
+            neustále vzdělávat. Jedině tak se dá dosáhnout skutečně kvalitních
+            služeb, které jdou ruku v ruce spolu s trendy a péčí o zdraví.
+          </p>
 
-        <div class="training">
-          <p class="training__year">2025</p>
-          <div class="training__list">
-            <div class="training__item">
-              <p class="training__name">Chemie materiálů</p>
-              <p class="training__lecturer">Ola Galeria</p>
+          <div class="about__trainings-training">
+            <p class="about__trainings-training-year">2025</p>
+            <div class="about__trainings-training-list">
+              <div class="about__trainings-training-item">
+                <p class="about__trainings-training-name">Chemie materiálů</p>
+                <p class="about__trainings-training-lecturer">Ola Galeria</p>
+              </div>
+              <div class="about__trainings-training-item">
+                <p class="about__trainings-training-name">Technika Reverse</p>
+                <p class="about__trainings-training-lecturer">Tadeáš Platl</p>
+              </div>
+              <div class="about__trainings-training-item">
+                <p class="about__trainings-training-name">
+                  Perfect speed doplnění
+                </p>
+                <p class="about__trainings-training-lecturer">Petra Fofová</p>
+              </div>
             </div>
-            <div class="training__item">
-              <p class="training__name">Technika Reverse</p>
-              <p class="training__lecturer">Tadeáš Platl</p>
+          </div>
+
+          <div class="about__trainings-training">
+            <p class="about__trainings-training-year">2024</p>
+            <div class="about__trainings-training-list">
+              <div class="about__trainings-training-item">
+                <p class="about__trainings-training-name">Moderní modeláž</p>
+                <p class="about__trainings-training-lecturer">Nikol Kowalski</p>
+              </div>
             </div>
-            <div class="training__item">
-              <p class="training__name">Perfect speed doplnění</p>
-              <p class="training__lecturer">Petra Fofová</p>
+          </div>
+
+          <div class="about__trainings-training">
+            <p class="about__trainings-training-year">2022 - 2024</p>
+            <div class="about__trainings-training-list">
+              <div class="about__trainings-training-item">
+                <p class="about__trainings-training-name">Praxe</p>
+                <p class="about__trainings-training-lecturer">Studio Adele</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__trainings-training">
+            <p class="about__trainings-training-year">2020</p>
+            <div class="about__trainings-training-list">
+              <div class="about__trainings-training-item">
+                <p class="about__trainings-training-name">
+                  Základní kurz manikúry
+                </p>
+                <p class="about__trainings-training-lecturer">
+                  Adele Nail School
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="training">
-          <p class="training__year">2024</p>
-          <div class="training__list">
-            <div class="training__item">
-              <p class="training__name">Moderní modeláž</p>
-              <p class="training__lecturer">Nikol Kowalski</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="training">
-          <p class="training__year">2022 - 2024</p>
-          <div class="training__list">
-            <div class="training__item">
-              <p class="training__name">Praxe</p>
-              <p class="training__lecturer">Studio Adele</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="training">
-          <p class="training__year">2020</p>
-          <div class="training__list">
-            <div class="training__item">
-              <p class="training__name">Základní kurz manikúry</p>
-              <p class="training__lecturer">Adele Nail School</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer id="footer-container"></footer>

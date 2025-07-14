@@ -16,7 +16,7 @@
       property="og:description"
       content="Kompletní nabídka manikérských služeb: přírodní nehty, gel lak, modeláž i relaxační doplňky. Přehled cen a možnost rezervace."
     />
-    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta property="og:image" content="https://nailhub.cz/img/hero.png" />
     <meta property="og:url" content="https://nailhub.cz/sluzby" />
 
     <!-- Twitter Card -->
@@ -35,12 +35,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
@@ -66,330 +61,379 @@
   </head>
 
   <body>
-    <!-- page -->
-    <!-- <div class="services-page"> -->
     <!-- header -->
     <header id="header-container"></header>
+    <div class="services">
+      <section class="section section--first">
+        <h1 class="heading--primary text-center">Nabídka služeb a ceník</h1>
 
-    <section class="section section--first">
-      <h1 class="heading-primary text-center">Nabídka služeb a ceník</h1>
-
-      <!-- Natural nails -->
-      <section class="services-grid">
-        <div class="heading-container">
-          <img
-            class="heading-img"
-            src="img/prirozene.png"
-            alt="Přirozené nehty"
-            loading="lazy"
-          />
-          <h2 class="heading-secondary">Přirozený vzhled</h2>
-        </div>
-
-        <div class="service sticky-note left">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Hygienická manikúra</h3>
-            <p>
-              Péče o kutikulu, zapilování volného okraje nehtu dle přání,
-              hydratace.
-            </p>
-            <div class="icons-wrapper">
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
-                <span>Hygienická manikúra</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="trash-bin-outline"
-                ></ion-icon>
-                <span>Odstranění starého materiálu</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="eyedrop-outline"
-                ></ion-icon>
-                <span>Výživný olejíček</span>
-              </div>
-            </div>
-            <p class="service-price">500 Kč</p>
+        <!-- Natural nails -->
+        <section class="services__grid">
+          <div class="services__heading-container">
+            <img
+              class="services__heading-img"
+              src="img/prirozene.png"
+              alt="Přirozené nehty"
+              loading="lazy"
+            />
+            <h2 class="heading--secondary">Přirozený vzhled</h2>
           </div>
-        </div>
 
-        <div class="service sticky-note right">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Japonská manikúra</h3>
-            <p>
-              Zalešťování speciální pasty a pudru do přírodního nehtu pro
-              přirozený lesk.
-            </p>
-            <div class="icons-wrapper">
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="trash-bin-outline"
-                ></ion-icon>
-                <span>Odstranění starého materiálu</span>
+          <div class="services__service services__service--left">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Hygienická manikúra
+              </h3>
+              <p>
+                Péče o kutikulu, zapilování volného okraje nehtu dle přání,
+                hydratace.
+              </p>
+              <div class="services__service-icons-wrapper">
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="cut-outline"
+                  ></ion-icon>
+                  <span>Hygienická manikúra</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="trash-bin-outline"
+                  ></ion-icon>
+                  <span>Odstranění starého materiálu</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="eyedrop-outline"
+                  ></ion-icon>
+                  <span>Výživný olejíček</span>
+                </div>
               </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
-                <span>Hygienická manikúra</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="leaf-outline"></ion-icon>
-                <span>Vitamínová pasta</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="eyedrop-outline"
-                ></ion-icon>
-                <span>Výživný olejíček</span>
-              </div>
+              <p class="services__service-price">500 Kč</p>
             </div>
-            <p class="service-price">600 Kč</p>
           </div>
-        </div>
 
-        <div class="service sticky-note left">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Odstranění modeláže</h3>
-            <p>
-              Odstranění staré modeláže z jiného studia. Pouze jako samostatná
-              služba.
-            </p>
-            <div class="icons-wrapper">
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="trash-bin-outline"
-                ></ion-icon>
-                <span>Odstranění starého materiálu</span>
+          <div class="services__service services__service--right">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Japonská manikúra
+              </h3>
+              <p>
+                Zalešťování speciální pasty a pudru do přírodního nehtu pro
+                přirozený lesk.
+              </p>
+              <div class="services__service-icons-wrapper">
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="trash-bin-outline"
+                  ></ion-icon>
+                  <span>Odstranění starého materiálu</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="cut-outline"
+                  ></ion-icon>
+                  <span>Hygienická manikúra</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="leaf-outline"
+                  ></ion-icon>
+                  <span>Vitamínová pasta</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="eyedrop-outline"
+                  ></ion-icon>
+                  <span>Výživný olejíček</span>
+                </div>
               </div>
+              <p class="services__service-price">600 Kč</p>
             </div>
-            <p class="service-price">300 Kč</p>
           </div>
+
+          <div class="services__service services__service--left">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Odstranění modeláže
+              </h3>
+              <p>
+                Odstranění staré modeláže z jiného studia. Pouze jako samostatná
+                služba.
+              </p>
+              <div class="services__service-icons-wrapper">
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="trash-bin-outline"
+                  ></ion-icon>
+                  <span>Odstranění starého materiálu</span>
+                </div>
+              </div>
+              <p class="services__service-price">300 Kč</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gel nail -->
+        <section class="services__grid">
+          <div class="services__heading-container">
+            <img
+              class="services__heading-img"
+              src="img/lak.png"
+              alt="Lakování gel lakem"
+              loading="lazy"
+            />
+            <h2 class="heading--secondary">Zpevnění přírodních nehtů</h2>
+          </div>
+
+          <div class="services__service services__service--right">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">Gel lak</h3>
+              <p>
+                Lehké zpevnění přírodních nehtů. Díky aplikaci v tenké vrstvě
+                zůstává pocit přirozenosti. Vhodné na krátké nehty.
+              </p>
+              <div class="services__service-icons-wrapper">
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="trash-bin-outline"
+                  ></ion-icon>
+                  <span>Odstranění starého materiálu</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="cut-outline"
+                  ></ion-icon>
+                  <span>Hygienická manikúra</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="bandage-outline"
+                  ></ion-icon>
+                  <span>Opravy ulomených nehtů a prasklin</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="brush-outline"
+                  ></ion-icon>
+                  <span>Aplikace barvy ke kůžičce</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="eyedrop-outline"
+                  ></ion-icon>
+                  <span>Výživný olejíček</span>
+                </div>
+              </div>
+              <p class="services__service-price">750 Kč</p>
+            </div>
+          </div>
+
+          <div class="services__service services__service--left">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Modeláž gelem
+              </h3>
+              <p>
+                Služba poskytuje větší zpevnění než gel lak. Vhodné pro delší
+                nehty a nehty s deformací.
+              </p>
+              <div class="services__service-icons-wrapper">
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="trash-bin-outline"
+                  ></ion-icon>
+                  <span>Odstranění starého materiálu</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="cut-outline"
+                  ></ion-icon>
+                  <span>Hygienická manikúra</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="bandage-outline"
+                  ></ion-icon>
+                  <span>Opravy ulomených nehtů a prasklin</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="brush-outline"
+                  ></ion-icon>
+                  <span>Aplikace barvy ke kůžičce</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="eyedrop-outline"
+                  ></ion-icon>
+                  <span>Výživný olejíček</span>
+                </div>
+              </div>
+              <p class="services__service-price">850 Kč</p>
+            </div>
+          </div>
+
+          <div class="services__service services__service--right">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Prodloužení nehtů
+              </h3>
+              <p>
+                Umělé prodloužení nehtů na šablonu nebo přes dual formu. Služba
+                je časově náročnější.
+              </p>
+              <div class="services__service-icons-wrapper">
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="trash-bin-outline"
+                  ></ion-icon>
+                  <span>Odstranění starého materiálu</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="cut-outline"
+                  ></ion-icon>
+                  <span>Hygienická manikúra</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="chevron-expand-outline"
+                  ></ion-icon>
+                  <span>Prodloužení nehtů</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="brush-outline"
+                  ></ion-icon>
+                  <span>Aplikace barvy ke kůžičce</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="eyedrop-outline"
+                  ></ion-icon>
+                  <span>Výživný olejíček</span>
+                </div>
+              </div>
+              <p class="services__service-price">900 Kč</p>
+            </div>
+          </div>
+
+          <div class="services__service services__service--left">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Doplnění modeláže
+              </h3>
+              <p>
+                Pouze pokud jsi u mě byla na nehtech před 3 týdny. Jinak je
+                nutné mít novou modeláž.
+              </p>
+              <div class="services__service-icons-wrapper">
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="trash-bin-outline"
+                  ></ion-icon>
+                  <span>Odstranění starého materiálu</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="cut-outline"
+                  ></ion-icon>
+                  <span>Hygienická manikúra</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="brush-outline"
+                  ></ion-icon>
+                  <span>Aplikace barvy ke kůžičce</span>
+                </div>
+                <div class="services__service-icon-container">
+                  <ion-icon
+                    class="services__service-icon"
+                    name="eyedrop-outline"
+                  ></ion-icon>
+                  <span>Výživný olejíček</span>
+                </div>
+              </div>
+              <p class="services__service-price">800 Kč</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Others -->
+        <section class="services__grid">
+          <div class="services__heading-container">
+            <img
+              class="services__heading-img"
+              src="img/doplnkove.png"
+              alt="Doplňkové služby"
+              loading="lazy"
+            />
+            <h2 class="heading--secondary">Doplňkové služby</h2>
+          </div>
+
+          <div class="services__service services__service--left">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Zdobení a design
+              </h3>
+              <p>
+                Cena se odvíjí od složitosti zdobení, použitého materiálu a
+                počtu nehtů. Napiš jakou máš představu nebo pošli obrázek.
+              </p>
+              <p class="services__service-price">50-300 Kč</p>
+            </div>
+          </div>
+
+          <div class="services__service services__service--right">
+            <div class="services__service-overview">
+              <h3 class="services__service-h3 heading--tertiary">
+                Masáž rukou
+              </h3>
+              <p>
+                Úleva a relaxace pro namáhané ruce. Cenově výhodnější v balíčku
+                při objednání spolu s další službou.
+              </p>
+              <p class="services__service-price">150 Kč / 200 Kč</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="services__cta">
+          <p class="services__cta-title heading--secondary margin-bottom-sm">
+            Vybrala sis?
+          </p>
+          <a class="text-center btn btn--empty" href="rezervace"
+            >Zarezervuj si termín</a
+          >.
         </div>
       </section>
-
-      <!-- Gel nail -->
-      <section class="services-grid">
-        <div class="heading-container">
-          <img
-            class="heading-img"
-            src="img/lak.png"
-            alt="Lakování gel lakem"
-            loading="lazy"
-          />
-          <h2 class="heading-secondary">Zpevnění přírodních nehtů</h2>
-        </div>
-
-        <div class="service sticky-note right">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Gel lak</h3>
-            <p>
-              Lehké zpevnění přírodních nehtů. Díky aplikaci v tenké vrstvě
-              zůstává pocit přirozenosti. Vhodné na krátké nehty.
-            </p>
-            <div class="icons-wrapper">
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="trash-bin-outline"
-                ></ion-icon>
-                <span>Odstranění starého materiálu</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
-                <span>Hygienická manikúra</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="bandage-outline"
-                ></ion-icon>
-                <span>Opravy ulomených nehtů a prasklin</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="brush-outline"></ion-icon>
-                <span>Aplikace barvy ke kůžičce</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="eyedrop-outline"
-                ></ion-icon>
-                <span>Výživný olejíček</span>
-              </div>
-            </div>
-            <p class="service-price">750 Kč</p>
-          </div>
-        </div>
-
-        <div class="service sticky-note left">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Modeláž gelem</h3>
-            <p>
-              Služba poskytuje větší zpevnění než gel lak. Vhodné pro delší
-              nehty a nehty s deformací.
-            </p>
-            <div class="icons-wrapper">
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="trash-bin-outline"
-                ></ion-icon>
-                <span>Odstranění starého materiálu</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
-                <span>Hygienická manikúra</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="bandage-outline"
-                ></ion-icon>
-                <span>Opravy ulomených nehtů a prasklin</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="brush-outline"></ion-icon>
-                <span>Aplikace barvy ke kůžičce</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="eyedrop-outline"
-                ></ion-icon>
-                <span>Výživný olejíček</span>
-              </div>
-            </div>
-            <p class="service-price">850 Kč</p>
-          </div>
-        </div>
-
-        <div class="service sticky-note right">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Prodloužení nehtů</h3>
-            <p>
-              Umělé prodloužení nehtů na šablonu nebo přes dual formu. Služba je
-              časově náročnější.
-            </p>
-            <div class="icons-wrapper">
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="trash-bin-outline"
-                ></ion-icon>
-                <span>Odstranění starého materiálu</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
-                <span>Hygienická manikúra</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="chevron-expand-outline"
-                ></ion-icon>
-                <span>Prodloužení nehtů</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="brush-outline"></ion-icon>
-                <span>Aplikace barvy ke kůžičce</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="eyedrop-outline"
-                ></ion-icon>
-                <span>Výživný olejíček</span>
-              </div>
-            </div>
-            <p class="service-price">900 Kč</p>
-          </div>
-        </div>
-
-        <div class="service sticky-note left">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Doplnění modeláže</h3>
-            <p>
-              Pouze pokud jsi u mě byla na nehtech před 3 týdny. Jinak je nutné
-              mít novou modeláž.
-            </p>
-            <div class="icons-wrapper">
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="trash-bin-outline"
-                ></ion-icon>
-                <span>Odstranění starého materiálu</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="cut-outline"></ion-icon>
-                <span>Hygienická manikúra</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon class="service-icon" name="brush-outline"></ion-icon>
-                <span>Aplikace barvy ke kůžičce</span>
-              </div>
-              <div class="service-icon-container">
-                <ion-icon
-                  class="service-icon"
-                  name="eyedrop-outline"
-                ></ion-icon>
-                <span>Výživný olejíček</span>
-              </div>
-            </div>
-            <p class="service-price">800 Kč</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Others -->
-      <section class="services-grid">
-        <div class="heading-container">
-          <img
-            class="heading-img"
-            src="img/doplnkove.png"
-            alt="Doplňkové služby"
-            loading="lazy"
-          />
-          <h2 class="heading-secondary">Doplňkové služby</h2>
-        </div>
-
-        <div class="service sticky-note left">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Zdobení a design</h3>
-            <p>
-              Cena se odvíjí od složitosti zdobení, použitého materiálu a počtu
-              nehtů. Napiš jakou máš představu nebo pošli obrázek.
-            </p>
-            <p class="service-price">50-300 Kč</p>
-          </div>
-        </div>
-
-        <div class="service sticky-note right">
-          <div class="service-overview">
-            <h3 class="heading-tertiary">Masáž rukou</h3>
-            <p>
-              Úleva a relaxace pro namáhané ruce. Cenově výhodnější v balíčku
-              při objednání spolu s další službou.
-            </p>
-            <p class="service-price">150 Kč / 200 Kč</p>
-          </div>
-        </div>
-      </section>
-
-      <div class="services-cta">
-        <p class="heading-secondary margin-bottom-sm">Vybrala sis?</p>
-        <a class="text-center btn btn--empty" href="rezervace"
-          >Zarezervuj si termín</a
-        >.
-      </div>
-    </section>
-    <!-- </div> -->
+    </div>
 
     <!-- footer -->
     <footer id="footer-container"></footer>

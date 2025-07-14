@@ -1,0 +1,45 @@
+/*****************************************************/
+/* UTILITIES – SPACING */
+/*****************************************************/
+
+.margin {
+  &-right {
+    &-sm {
+      margin-right: 1.6rem !important;
+    }
+  }
+
+  &-top {
+    &-sm {
+      margin-top: 1.6rem !important;
+    }
+
+    &-md {
+      margin-top: 3.2rem !important;
+    }
+
+    &-lg {
+      margin-top: 6.4rem !important;
+    }
+  }
+
+  &-bottom {
+    &-sm {
+      margin-bottom: 1.6rem !important;
+    }
+
+    &-md {
+      margin-bottom: 3.2rem !important;
+    }
+  }
+}
+
+/*****************************************************/
+/* UTILITIES – TEXT ALIGNMENT */
+/*****************************************************/
+
+.text {
+  &-center {
+    text-align: center !important;
+  }
+}

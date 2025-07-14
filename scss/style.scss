@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap");
+//@import "queries";
+
+@import "base/reset";
+@import "base/variables";
+
+@import "components/about";
+@import "components/booking";
+@import "components/contact";
+@import "components/faq";
+@import "components/footer-page";
+@import "components/hero";
+@import "components/index";
+@import "components/services";
+
+@import "layout/container";
+@import "layout/header";
+@import "layout/footer";
+
+@import "utility/grid";
+@import "utility/margin";
+
+@import "base";

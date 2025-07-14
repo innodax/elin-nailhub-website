@@ -1,0 +1,47 @@
+.about {
+  &__education {
+    &-img-box {
+      margin-top: 4.8rem;
+    }
+  }
+
+  &__trainings {
+    background-color: $color-bg-pink;
+
+    &-training {
+      margin-bottom: 3.2rem;
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      gap: 2.4rem;
+
+      &-year {
+        display: flex;
+        justify-self: left;
+        font-family: $font-subheading;
+        font-size: 4rem;
+        letter-spacing: $letter-spacing-large;
+        text-transform: uppercase;
+        color: $color-text-pink-dark;
+        font-weight: bold;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-name {
+        font-family: $font-subheading;
+        font-size: 2em;
+        letter-spacing: $letter-spacing-large;
+        text-transform: uppercase;
+        color: $color-text-pink-dark;
+        font-weight: bold;
+      }
+
+      &-lecturer {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+}

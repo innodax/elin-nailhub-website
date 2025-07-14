@@ -1,4 +1,4 @@
-const questions = document.querySelectorAll(".faq-question");
+const questions = document.querySelectorAll(".faq__question");
 
 questions.forEach((btn) => {
   const icon = btn.querySelector("ion-icon");

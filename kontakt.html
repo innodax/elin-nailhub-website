@@ -16,8 +16,8 @@
       property="og:description"
       content="Šilingrovo náměstí, Brno. Kontaktujte nás – telefon, e-mail, dopravní spojení a mapa."
     />
-    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
     <meta property="og:url" content="https://nailhub.cz/kontakt" />
+    <meta property="og:image" content="https://nailhub.cz/img/hero.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -26,7 +26,7 @@
       name="twitter:description"
       content="Kontakt na nehtové studio Elin Nailhub – adresa, telefon, dostupnost."
     />
-    <meta name="twitter:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta name="twitter:image" content="https://nailhub.cz/img/hero.png" />
 
     <link rel="canonical" href="https://nailhub.cz/kontakt" />
 
@@ -36,12 +36,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
@@ -70,27 +65,32 @@
     <!-- header -->
     <header id="header-container"></header>
 
-    <!-- page sections -->
-    <section class="section section--first">
-      <div class="container address">
-        <h1 class="heading-primary text-center margin-bottom-md">
-          Kde se studio nachází?
-        </h1>
-        <p class="text-center">
-          Monika Kramářová |
-          <a class="description-link" href="tel:+420731107590"
-            >+420 731 107 590</a
-          >
-          |
-          <a class="description-link" href="mailto:elinnailhub@gmail.com"
-            >elinnailhub@gmail.com</a
-          >
-        </p>
-        <p class="text-center">Šilingrovo nám. 257/3, 602 00 Brno město</p>
-      </div>
-      <div class="map">
+    <div class="contact">
+      <!-- section where -->
+      <section class="section section--first contact__location">
+        <div class="container">
+          <h1 class="heading--primary text-center margin-bottom-md">
+            Kde se studio nachází?
+          </h1>
+          <p class="text-center">
+            Monika Kramářová |
+            <a class="link--default" href="tel:+420731107590"
+              >+420 731 107 590</a
+            >
+            |
+            <a class="link--default" href="mailto:elinnailhub@gmail.com"
+              >elinnailhub@gmail.com</a
+            >
+          </p>
+          <p class="text-center">Šilingrovo nám. 257/3, 602 00 Brno město</p>
+        </div>
+      </section>
+
+      <!-- map -->
+      <div class="contact__map">
         <div style="-webkit-filter: grayscale(100%); filter: grayscale(75%)">
           <iframe
+            class="contact__map-inner"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.4211862284405!2d16.602880977090265!3d49.19256907713041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294516b7aaaab%3A0x74d5212d6f3f0541!2zxaBpbGluZ3Jvdm8gbsOhbS4gMywgNjAyIDAwIEJybm8tc3TFmWVk!5e0!3m2!1sen!2scz!4v1740345554774!5m2!1sen!2scz"
             width="100%"
             height="450"
@@ -102,55 +102,65 @@
           ></iframe>
         </div>
       </div>
-    </section>
 
-    <section class="section contact-how">
-      <div class="container">
-        <h2 class="heading-secondary text-center margin-bottom-md">
-          Jak se k nám dostat?
-        </h2>
-        <div class="grid grid--3-cols">
-          <div>
-            <div class="icons-wrapper">
-              <div class="contact-icon-container">
-                <ion-icon class="contact-icon" name="car-outline"></ion-icon>
+      <!-- section how -->
+      <section class="section contact__how">
+        <div class="container">
+          <h2 class="heading--secondary text-center margin-bottom-md">
+            Jak se k nám dostat?
+          </h2>
+          <div class="grid grid--3-cols contact__how-options">
+            <div class="contact__how-option">
+              <div class="contact__how-icons-wrapper">
+                <div class="contact__how-icon-container">
+                  <ion-icon
+                    class="contact__how-icon"
+                    name="car-outline"
+                  ></ion-icon>
+                </div>
+                <h3 class="contact__how-h3 heading--tertiary">Autem</h3>
               </div>
-              <h3 class="heading-tertiary">Autem</h3>
+
+              <p>
+                Přibližně 300 metrů od studia se nachází parkovací dům Domini
+                Park na adrese Husova 712/14.
+              </p>
             </div>
 
-            <p>
-              Přibližně 300 metrů od studia se nachází parkovací dům Domini Park
-              na adrese Husova 712/14.
-            </p>
-          </div>
-
-          <div>
-            <div class="icons-wrapper">
-              <div class="contact-icon-container">
-                <ion-icon class="contact-icon" name="bus-outline"></ion-icon>
+            <div>
+              <div class="contact__how-icons-wrapper">
+                <div class="contact__how-icon-container">
+                  <ion-icon
+                    class="contact__how-icon"
+                    name="bus-outline"
+                  ></ion-icon>
+                </div>
+                <h3 class="contact__how-h3 heading--tertiary">MHD</h3>
               </div>
-              <h3 class="heading-tertiary">MHD</h3>
+              <p>
+                Přímo na Šilingrovo náměstí přijíždějí na stejnojmennou zastávku
+                tramvajové linky 5, 6 a 12.
+              </p>
             </div>
-            <p>
-              Přímo na Šilingrovo náměstí přijíždějí na stejnojmennou zastávku
-              tramvajové linky 5, 6 a 12.
-            </p>
-          </div>
-          <div>
-            <div class="icons-wrapper">
-              <div class="contact-icon-container">
-                <ion-icon class="contact-icon" name="walk-outline"></ion-icon>
+            <div>
+              <div class="contact__how-icons-wrapper">
+                <div class="contact__how-icon-container">
+                  <ion-icon
+                    class="contact__how-icon"
+                    name="walk-outline"
+                  ></ion-icon>
+                </div>
+                <h3 class="contact__how-h3 heading--tertiary">Pěšky</h3>
               </div>
-              <h3 class="heading-tertiary">Pěšky</h3>
+              <p>
+                Studio se nachází asi 500 metrů od Hlavního nádraží, 600 metrů
+                od zastávky Česká a 400 metrů od Náměstí Svobody.
+              </p>
             </div>
-            <p>
-              Studio se nachází asi 500 metrů od Hlavního nádraží, 600 metrů od
-              zastávky Česká a 400 metrů od Náměstí Svobody.
-            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer id="footer-container"></footer>

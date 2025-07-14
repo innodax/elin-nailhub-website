@@ -16,7 +16,7 @@
       property="og:description"
       content="Rezervujte si termín pro manikúru v Elin Nailhub. Přehled volných termínů, kontakt a jednoduché objednání."
     />
-    <meta property="og:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta property="og:image" content="https://nailhub.cz/img/hero.png" />
     <meta property="og:url" content="https://nailhub.cz/rezervace" />
 
     <!-- Twitter Card -->
@@ -29,7 +29,7 @@
       name="twitter:description"
       content="Přehled volných termínů a kontakt pro rezervaci manikúry v Elin Nailhub."
     />
-    <meta name="twitter:image" content="https://nailhub.cz/img/kolaz10.png" />
+    <meta name="twitter:image" content="https://nailhub.cz/img/hero.png" />
 
     <link rel="canonical" href="https://nailhub.cz/rezervace" />
 
@@ -39,12 +39,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
@@ -73,44 +68,56 @@
     <!-- header -->
     <header id="header-container"></header>
 
-    <!-- page sections -->
-    <section class="section section--first">
-      <div class="container about">
-        <h1 class="heading-primary text-center margin-bottom-md">
-          Rezervace termínu
-        </h1>
+    <div class="booking">
+      <!-- section -->
+      <section class="section section--first">
+        <div class="container">
+          <h1 class="heading--primary text-center margin-bottom-md">
+            Rezervace termínu
+          </h1>
 
-        <p class="text-center">Pro rezervaci mě prosím kontaktuj:</p>
-        <p class="text-center">
-          <a
-            class="description-link"
-            href="https://www.instagram.com/elin.nailhub/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Instagram</a
-          >
-          |
-          <a class="description-link" href="tel:+420777111222"
-            >+420 731 107 590</a
-          >
-          (i WhatsApp) |
-          <a class="description-link" href="mailto:elinnailhub@gmail.com"
-            >elinnailhub@gmail.com</a
-          >
-        </p>
+          <p class="text-center">Pro rezervaci mě prosím kontaktuj:</p>
+          <p class="text-center">
+            <a
+              class="link--default"
+              href="https://www.instagram.com/elin.nailhub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+            |
+            <a class="link--default" href="tel:+420731107590"
+              >+420 731 107 590</a
+            >
+            (i WhatsApp) |
+            <a class="link--default" href="mailto:elinnailhub@gmail.com"
+              >elinnailhub@gmail.com</a
+            >
+          </p>
 
-        <p class="text-center margin-top-med">
-          Volné termíny vypisuji na také Instagramu. Pokud Instagram nepoužíváš,
-          neváhej mi napsat na telefonní číslo nebo e-mail a domluvíme se.
-        </p>
+          <div class="booking__reservio margin-top-md">
+            <iframe
+              src="https://elin-nailhub.reservio.com"
+              width="800px"
+              height="500px"
+              frameborder="0"
+            ></iframe>
+          </div>
 
-        <p class="text-center margin-top-med">
-          Zajímá Tě, jaké služby nabízím?
-          <a class="description-link" href="/sluzby">Přejdi na přehled služeb</a
-          >.
-        </p>
-      </div>
-    </section>
+          <p class="text-center margin-top-md">
+            Volné termíny vypisuji na také Instagramu. Pokud Instagram
+            nepoužíváš, neváhej mi napsat na telefonní číslo nebo e-mail a
+            domluvíme se.
+          </p>
+
+          <p class="text-center margin-top-md">
+            Zajímá Tě, jaké služby nabízím?
+            <a class="link--default" href="/sluzby">Přejdi na přehled služeb</a
+            >.
+          </p>
+        </div>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer id="footer-container"></footer>

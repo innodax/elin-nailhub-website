@@ -1,87 +1,72 @@
 <footer class="footer">
-  <div class="container grid footer-grid">
-    <nav class="social-col">
-      <img
-        src="img/logo-elin.png"
-        alt="Elin nailhub logo"
-        class="footer-logo"
-      />
-      <ul class="social-links">
+  <div class="container grid footer__grid">
+    <nav class="footer__column footer__column--social">
+      <a href="/index.html"
+        ><img
+          src="img/logo-elin.png"
+          alt="Elin nailhub logo"
+          class="footer__logo"
+      /></a>
+
+      <ul class="footer__social-links">
         <li>
           <a
-            class="footer-link"
+            class="footer__social-link"
             href="https://www.instagram.com/elin.nailhub/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram Elin Nailhub"
-            ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a
-            class="footer-link"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Tik Tok Elin Nailhub"
-            ><ion-icon class="social-icon" name="logo-tiktok"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a
-            class="footer-link"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook Elin Nailhub"
-            ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-          ></a>
+          >
+            <ion-icon
+              class="footer__social-icon"
+              name="logo-instagram"
+            ></ion-icon>
+          </a>
         </li>
       </ul>
     </nav>
 
-    <nav class="nav-col">
-      <p class="footer-heading">Podpora</p>
-      <ul class="footer-nav">
+    <nav class="footer__column footer__column--nav">
+      <p class="footer__heading">Podpora</p>
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="faq">Otázky a odpovědi</a></li>
         <li>
-          <a class="footer-link" href="faq">Otázky a odpovědi</a>
+          <a class="footer__nav-link" href="slovnicek">Slovníček pojmů</a>
         </li>
+        <li><a class="footer__nav-link" href="spoluprace">Spolupráce</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__column footer__column--nav">
+      <p class="footer__heading">Všeobecné podmínky</p>
+      <ul class="footer__nav-list">
+        <li><a class="footer__nav-link" href="vop">Obchodní podmínky</a></li>
+        <li><a class="footer__nav-link" href="cookies">Zásady cookies</a></li>
         <li>
-          <a class="footer-link" href="slovnicek">Slovníček pojmů</a>
-        </li>
-        <li>
-          <a class="footer-link" href="spoluprace">Spolupráce</a>
+          <a class="footer__nav-link" href="gdpr">Ochrana osobních údajů</a>
         </li>
       </ul>
     </nav>
 
-    <nav class="nav-col">
-      <p class="footer-heading">Všeobecné podmínky</p>
-      <ul class="footer-nav">
-        <li><a class="footer-link" href="vop">Obchodní podmínky</a></li>
-        <li><a class="footer-link" href="cookies">Zásady cookies</a></li>
-        <li><a class="footer-link" href="gdpr">Ochrana osobních údajů</a></li>
-      </ul>
-    </nav>
-
-    <nav class="info-col">
-      <p class="footer-heading">Informace o studiu</p>
-      <p class="footer-description">
+    <nav class="footer__column footer__column--info">
+      <p class="footer__heading">Informace o studiu</p>
+      <p class="footer__description">
         Odpovědná osoba: Monika Kramářová, IČO 23204109
       </p>
-      <p class="footer-description">
+      <p class="footer__description">
         Adresa: Šilingrovo nám. 257/3, 602 00 Brno město
       </p>
-      <p class="footer-description">Provozní doba: dle objednání</p>
-      <p class="footer-description">
+      <p class="footer__description">Provozní doba: dle objednání</p>
+      <p class="footer__description">
         Platba možná v hotovosti a na účet přes bankovní QR.
       </p>
     </nav>
   </div>
 </footer>
-<div class="copyright-container">
-  <p class="copyright-text">
-    Copyright &copy; <span class="year">2020</span> Elin Nailhub. Všechna práva
-    vyhrazena.
+
+<div class="footer__copyright">
+  <p class="footer__copyright-text">
+    Copyright &copy; <span class="footer__year">2020</span> Elin Nailhub.
+    Všechna práva vyhrazena.
   </p>
 </div>
